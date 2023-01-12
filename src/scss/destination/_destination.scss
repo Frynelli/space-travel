@@ -1,0 +1,41 @@
+
+.dest-menu{
+    display: flex;
+    margin-left: 300px;
+}
+.dest-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    height: 96px;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+
+}
+.dest-menu ul li{
+  display: flex;
+  position:relative;
+  margin-left: 60px;
+  height: 96px;
+  align-items: center;
+  
+}
+.dest-menu ul li .link{
+    color: $text-color-light;
+}
+.dest-menu ul li a.active{
+    color:#ffff;
+    
+}
+.dest-menu ul li .link:hover{
+  text-decoration: none;
+}
+.dest-menu ul li .link:hover::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  border-bottom: 3px solid #ffff;
+
+}

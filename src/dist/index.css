@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Caveat:wght@500&family=Outfit:wght@300&family=Special+Elite&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #0B0D17;
+  color: #D0D6F9; }
+
+.link {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffff;
+  text-decoration: none; }
+
+h1 {
+  font-family: "Bellefair", serif;
+  font-weight: 500;
+  font-size: 150px; }
+
+h2 {
+  font-family: "Bellefair", serif;
+  font-weight: 500;
+  font-size: 100px; }
+
+h3 {
+  font-family: "Bellefair", serif;
+  font-weight: 500;
+  font-size: 56px; }
+
+h4 {
+  font-family: "Bellefair", serif;
+  font-weight: 500;
+  font-size: 32px; }
+
+h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 4.75px; }
+
+p {
+  color: #D0D6F9; }
+
+.btn-1 {
+  width: 274px;
+  height: 274px;
+  background-color: #fff;
+  color: #0B0D17;
+  letter-spacing: 2px;
+  line-height: 37px;
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  border-radius: 50%;
+  z-index: 2; }
+
+.container-page {
+  position: relative;
+  top: 300px;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-evenly; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 96px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  z-index: 50; }
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 5px;
+  max-width: 50%; }
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .modal {
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.04); } }
+
+.logo {
+  position: relative;
+  left: 145px; }
+
+.navbar .line {
+  background: #6F38C5;
+  height: 5px;
+  border: none; }
+
+.menu {
+  width: 900px;
+  margin-left: 450px; }
+
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  height: 96px;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase; }
+
+.menu ul li {
+  display: flex;
+  position: relative;
+  margin-left: 60px;
+  height: 96px;
+  align-items: center; }
+
+.menu ul li .link:hover {
+  text-decoration: none; }
+
+.menu ul li .link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid #ffff; }
+
+.bck-img {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-app/space-travel/assets/home/earth-background-main.png");
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+  background-size: cover; }
+
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.body-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+  margin-left: 165px;
+  box-sizing: border-box;
+  width: 450px;
+  height: 382px; }
+
+.body-details h1 {
+  margin: 30px;
+  text-transform: uppercase;
+  font-size: 150px;
+  line-height: 172px;
+  color: #FFFFFF; }
+
+.body-details h3 {
+  text-transform: uppercase;
+  letter-spacing: 4.7px;
+  font-size: 28px; }
+
+.body-details p {
+  font-size: 18px;
+  line-height: 32px; }
+
+.button-main {
+  margin-top: 380px;
+  margin-right: 230px; }
+
+.dest-menu {
+  display: flex;
+  margin-left: 300px; }
+
+.dest-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  height: 96px;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase; }
+
+.dest-menu ul li {
+  display: flex;
+  position: relative;
+  margin-left: 60px;
+  height: 96px;
+  align-items: center; }
+
+.dest-menu ul li .link {
+  color: #D0D6F9; }
+
+.dest-menu ul li a.active {
+  color: #ffff; }
+
+.dest-menu ul li .link:hover {
+  text-decoration: none; }
+
+.dest-menu ul li .link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid #ffff; }

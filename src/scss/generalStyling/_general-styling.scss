@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Caveat:wght@500&family=Outfit:wght@300&family=Special+Elite&display=swap');
+@import "./breakpoints";
+
+//font-set-up
+$font-1: 'Barlow Condensed', sans-serif;
+$font-2: 'Bellefair', serif;
+
+//colors
+$dark-color:#0B0D17;
+$text-color-light:#D0D6F9;
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: $dark-color;
+    color:$text-color-light;
+    
+    
+}
+.link{
+    font-family: $font-1;
+    color: #ffff;
+    text-decoration: none;
+}
+
+h1{
+    font-family: $font-2;
+    font-weight: 500;
+    font-size: 150px;
+}
+h2{
+    font-family: $font-2;
+    font-weight: 500;
+    font-size: 100px;
+}
+h3{
+    font-family: $font-2;
+    font-weight: 500;
+    font-size: 56px;
+}
+h4{
+    font-family: $font-2;
+    font-weight: 500;
+    font-size: 32px;
+}
+h5{
+    font-family: $font-1;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+}
+
+p{
+    color: $text-color-light;
+}
+
+.btn-1{
+    width: 274px;
+    height: 274px;
+    background-color: #fff;
+    color: $dark-color;
+    letter-spacing: 2px;
+    line-height: 37px;
+    font-size: 32px;
+    font-family: $font-2;
+    font-weight: 400;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.container-page{
+    position: relative;
+    top:300px;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
