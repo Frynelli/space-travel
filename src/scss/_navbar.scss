@@ -33,15 +33,17 @@
   position: relative;
   left:145px;
  }
-.navbar .line{
-  background: #6F38C5;
-  height: 5px;
-  border: none;
+.navbar .hr{
+  position: absolute;
+  left:280px;
+width: 473px;
+
 }
 .menu{
     width: 900px;
     margin-left:450px;
 }
+
 .menu ul{
     display: flex;
     justify-content: space-evenly;

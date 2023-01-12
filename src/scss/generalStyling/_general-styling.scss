@@ -56,6 +56,7 @@ h5{
 }
 
 p{
+    font-family: $font-1;
     color: $text-color-light;
 }
 
@@ -73,12 +74,19 @@ p{
     z-index: 2;
 }
 
+.container{
+    max-width:1500px;
+
+}
+
 .container-page{
-    position: relative;
-    top:300px;
     display: flex;
-    width: 100%;
-    align-items: flex-end;
-    flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-evenly;
+    
+}
+.hr{
+    background-color: #333;
+height: 2px;
+z-index: 53;
 }

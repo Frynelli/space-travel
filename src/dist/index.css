@@ -40,6 +40,7 @@ h5 {
   letter-spacing: 4.75px; }
 
 p {
+  font-family: "Barlow Condensed", sans-serif;
   color: #D0D6F9; }
 
 .btn-1 {
@@ -55,14 +56,18 @@ p {
   border-radius: 50%;
   z-index: 2; }
 
+.container {
+  max-width: 1500px; }
+
 .container-page {
-  position: relative;
-  top: 300px;
   display: flex;
-  width: 100%;
-  align-items: flex-end;
-  flex-direction: row-reverse;
+  align-items: center;
   justify-content: space-evenly; }
+
+.hr {
+  background-color: #333;
+  height: 2px;
+  z-index: 53; }
 
 .navbar {
   position: fixed;
@@ -93,10 +98,10 @@ p {
   position: relative;
   left: 145px; }
 
-.navbar .line {
-  background: #6F38C5;
-  height: 5px;
-  border: none; }
+.navbar .hr {
+  position: absolute;
+  left: 280px;
+  width: 473px; }
 
 .menu {
   width: 900px;
@@ -133,7 +138,7 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-app/space-travel/assets/home/earth-background-main.png");
+  background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/assets/home/earth-background-main.png");
   background-repeat: no-repeat;
   mix-blend-mode: lighten;
   background-size: cover; }
@@ -172,14 +177,53 @@ p {
   margin-top: 380px;
   margin-right: 230px; }
 
-.dest-menu {
+.bck-img-dst {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+  background-size: cover; }
+
+.img-container {
+  margin-top: 60px;
+  width: 445px;
+  height: 445px;
+  background-color: aqua; }
+
+.destinations .inner-container {
+  margin-top: 120px;
   display: flex;
-  margin-left: 300px; }
+  flex-direction: column;
+  align-items: center; }
+
+.destinations .side-box {
+  margin-top: 120px;
+  width: 445px;
+  height: 472px; }
+
+.destinations h5 {
+  margin-bottom: 5px; }
+
+.destinations h5 span.number-dst {
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25; }
+
+.dest-menu {
+  position: relative;
+  left: -45px; }
+
+.dest-details {
+  margin-top: 20px; }
 
 .dest-menu ul {
   display: flex;
-  justify-content: space-evenly;
-  height: 96px;
+  height: 34px;
   align-items: center;
   list-style-type: none;
   text-transform: uppercase; }
@@ -187,8 +231,8 @@ p {
 .dest-menu ul li {
   display: flex;
   position: relative;
-  margin-left: 60px;
-  height: 96px;
+  margin-left: 45px;
+  height: 34px;
   align-items: center; }
 
 .dest-menu ul li .link {
@@ -207,3 +251,30 @@ p {
   left: 0;
   right: 0;
   border-bottom: 3px solid #ffff; }
+
+.planets .title {
+  color: #ffffff; }
+
+.planets p {
+  font-size: 18px; }
+
+.planets .hr {
+  width: 444px;
+  margin: 40px 0; }
+
+.planets .details {
+  display: flex;
+  padding: 10px; }
+
+.planets .details .distance {
+  margin-right: 20px; }
+
+.planets .details .distance h5 {
+  color: #ffffff; }
+
+.planets .details .time {
+  position: relative;
+  left: 50px; }
+
+.planets .details .time h5 {
+  color: #ffffff; }
