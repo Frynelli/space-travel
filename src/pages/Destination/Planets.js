@@ -1,15 +1,18 @@
-import { useState } from "react";
-import { Route, useParams} from "react-router-dom";
+
+
+import { useParams} from "react-router-dom";
 import Planet from "./Planet";
+import PlanetImg from "./PlanetImg";
 
 const Planets = (props)=>{
     const params=useParams();
 
 
+
     return(
         <div>
-               
                {props.planets.filter((planet)=>planet.id===params.planetsId).map((planet)=>(
+               
                 <Planet
                 key={planet.id}
                 id={planet.id}
@@ -17,7 +20,9 @@ const Planets = (props)=>{
                 text={planet.text}
                 distance={planet.distance}
                 time={planet.time}
+            
                 />
+
             ))}
            
     

@@ -1,10 +1,15 @@
+import { Fragment } from "react";
+
 
 
 const Planet =(props)=>{
+ 
    
     return(
+      <Fragment>
+      
         <div className="planets">
-          <div className="title"><h2>{props.title}</h2></div>
+          <div  className="title"><h2>{props.title}</h2></div>
           <p>{props.text}</p>
           <div className="hr"></div>
           <div className="details">
@@ -18,6 +23,7 @@ const Planet =(props)=>{
             </div>
           </div>
         </div>
+        </Fragment>
     )
 }
 
