@@ -5,11 +5,12 @@ import europaImg from "../../assets/destination/image-europa.png";
 import titanImg from "../../assets/destination/image-titan.png";
 import Planets from "./Planets";
 import Planet from "./Planet";
-import { Route, NavLink, useParams} from "react-router-dom";
+import { Route, NavLink} from "react-router-dom";
 
-import PlanetImg from "./PlanetImg";
+
 import { Fragment } from "react";
 import ImgMaping from "./ImgMaping";
+import Images from "../../components/Images";
 
 
 
@@ -51,7 +52,7 @@ const DUMMY_DATA =[
 ]
 
 const Destination = ()=>{
-    const params =useParams()
+    
 
     return(
 <Fragment>
@@ -59,9 +60,9 @@ const Destination = ()=>{
     <div className="container">
             <div className="container-page destinations bck-img-dst" >
             <div className="inner-container">
-            <h5><span className="number-dst"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
+            <h5><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
             <div className="img-container">
-            <PlanetImg 
+            <Images 
             key={DUMMY_DATA[0].id}
             id={DUMMY_DATA[0].id}
             img={DUMMY_DATA[0].img} />
@@ -93,7 +94,7 @@ const Destination = ()=>{
     <div className="container">
             <div className="container-page destinations bck-img-dst" >
             <div className="inner-container">
-            <h5><span className="number-dst"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
+            <h5><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
             <div className="img-container">
                <ImgMaping planets={DUMMY_DATA}/>
                </div>
