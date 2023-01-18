@@ -75,8 +75,8 @@ p{
 }
 
 .container{
-    max-width:1500px;
-
+    max-width:1200px;
+height: 100vh;
 }
 
 .container-page{
@@ -94,7 +94,7 @@ z-index: 53;
     margin-bottom: 5px;
     text-transform: uppercase;
    }
-.container-page h5 span.number-page{
+h5 span.number-page{
     line-height: 34px;
     letter-spacing: 4.725px;
     color: #ffffff;

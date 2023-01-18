@@ -19,7 +19,7 @@ function App() {
       <Route path="/crew">
         <Crew/>
       </Route>
-      <Route path="/technology">
+      <Route path="/technology/">
         <Technology/>
       </Route>
       </Switch>

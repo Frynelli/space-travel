@@ -9,7 +9,7 @@ import { Route, NavLink} from "react-router-dom";
 
 
 import { Fragment } from "react";
-import ImgMaping from "./ImgMaping";
+import ImgMaping from "../../components/ImgMaping";
 import Images from "../../components/Images";
 
 
@@ -89,14 +89,14 @@ const Destination = ()=>{
         </div>
         </div>
     </Route>
-    <Route path={`/destination/:planetsId`}>
+    <Route path={`/destination/:dataId`}>
         
     <div className="container">
             <div className="container-page destinations bck-img-dst" >
             <div className="inner-container">
             <h5><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
             <div className="img-container">
-               <ImgMaping planets={DUMMY_DATA}/>
+               <ImgMaping info={DUMMY_DATA}/>
                </div>
             </div>
             <div className="side-box">

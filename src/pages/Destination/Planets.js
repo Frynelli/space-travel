@@ -11,7 +11,7 @@ const Planets = (props)=>{
 
     return(
         <div>
-               {props.planets.filter((planet)=>planet.id===params.planetsId).map((planet)=>(
+               {props.planets.filter((planet)=>planet.id===params.dataId).map((planet)=>(
                
                 <Planet
                 key={planet.id}

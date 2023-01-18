@@ -1,0 +1,121 @@
+.container-tech{
+    display: flex;
+    align-items: center;
+}
+.bck-img-tech{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    background-size: cover;
+}
+
+.container-tech .inner-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 60vw;
+    justify-content: space-around;
+}
+.container-tech .inner-box .inner-left-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50vh;
+}
+.container-tech .inner-box h5{
+   text-transform: uppercase;
+   position: relative;
+   top:30px;
+}
+
+//left-box
+
+// .container-tech .inner-box .left-box{
+//     display: flex;
+//     position: relative;
+//     top: -43px;
+//     left: 77px;
+   
+//     height: 50vh;
+//     flex-direction: column;
+// }
+
+
+
+//left-toggle navigation
+
+.left-box .left-toggle{
+    position: absolute;
+    left: 50px;
+   bottom:170px;
+}
+.left-toggle ul li {
+    cursor: pointer;
+    list-style-type: none;
+}
+.left-toggle ul li.dot{
+    
+    border: 3px solid #34373d;
+    mix-blend-mode: normal;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px; 
+}
+.left-toggle ul li.dot:hover{
+    border: 3px solid #FFFFFF;
+}
+.left-toggle ul li.dot:active{
+    background-color: #FFFFFF;
+
+}
+.left-toggle ul li a{
+    text-decoration: none;
+    font-size: 34px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.left-toggle ul li a:active{
+    color: #34373d;
+}
+.left-toggle ul li a div{
+    margin: 20px 30px;
+}
+//inner box left side
+.left-inner-box{
+    margin-bottom: 110px;
+    height: 200px;
+}
+
+.left-inner-box .fixed{
+margin-top: 30px;
+margin-bottom: 5px;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 2.7px;
+}
+// .left-inner-box .text-tech{
+//     position: inherit;
+// }
+.left-inner-box .text-tech h3{
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.left-inner-box .text-tech p{
+font-size: 18px;
+line-height: 32px;
+width:440px;
+}
+
+//right-box
+
+.container-tech .right-box{
+    position: relative;
+    top:0;
+    height: 50vh;
+}

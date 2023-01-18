@@ -1,18 +1,18 @@
 import { Fragment } from "react"
 import { useParams } from "react-router-dom";
 
-import Images from "../../components/Images";
+import Images from "../components/Images";
 const ImgMaping =(props)=>{
     const params=useParams();
     return(
         <Fragment>
            
-           {props.planets.filter((planet)=>planet.id===params.planetsId).map((planet)=>(
+           {props.info.filter((data)=>data.id===params.dataId).map((data)=>(
                
                <Images
-               key={planet.id}
-               id={planet.id}
-               img={planet.img}
+               key={data.id}
+               id={data.id}
+               img={data.img}
                />
                
            ))} 

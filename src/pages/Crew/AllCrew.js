@@ -4,7 +4,7 @@ import OneCrew from "./OneCrew"
 const AllCrew = (props)=>{
     const params = useParams()
     return<Fragment>
-         {props.allCrew.filter((crew)=>crew.id===params.crewId).map((crew)=>(
+         {props.info.filter((crew)=>crew.id===params.dataId).map((crew)=>(
                
                <OneCrew
                key={crew.id}

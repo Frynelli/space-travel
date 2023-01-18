@@ -10,7 +10,7 @@ import OneCrew from "./OneCrew"
 import Images from "../../components/Images"
 import { Fragment } from "react"
 import AllCrew from "./AllCrew"
-import ImgMappingCrew from "./ImgMappingCrew"
+import ImgMaping from "../../components/ImgMaping"
 
 const CREW_DATA =[
   {
@@ -87,7 +87,7 @@ const Crew =()=>{
   
   </Route>
 
-  <Route path={`/crew/:crewId`}>
+  <Route path={`/crew/:dataId`}>
       <div className="container">
       <div className="container-page crew-page bck-img-crew" >
       <div className="fixed-container">
@@ -96,7 +96,7 @@ const Crew =()=>{
       
       <div className="left-box">
       <AllCrew
-          allCrew={CREW_DATA}
+          info={CREW_DATA}
           />
          </div>
          
@@ -112,8 +112,8 @@ const Crew =()=>{
       </div>
       <div className="right-box">
           <div className="img-details">
-               <ImgMappingCrew
-                allCrew={CREW_DATA}
+               <ImgMaping
+                info={CREW_DATA}
                   />
               </div>
         
@@ -129,7 +129,6 @@ const Crew =()=>{
 export default Crew;
 
 
-//crew
 
 
 
