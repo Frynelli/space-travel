@@ -60,20 +60,23 @@ p{
     color: $text-color-light;
 }
 
-.btn-1{
-    width: 274px;
-    height: 274px;
-    background-color: #fff;
-    color: $dark-color;
-    letter-spacing: 2px;
-    line-height: 37px;
-    font-size: 32px;
-    font-family: $font-2;
-    font-weight: 400;
-    border-radius: 50%;
-    z-index: 2;
-}
-
+// .btn-1{
+//     position: relative;
+//     width: 274px;
+//     height: 274px;
+//     background-color: #fff;
+//     color: $dark-color;
+//     letter-spacing: 2px;
+//     line-height: 37px;
+//     font-size: 32px;
+//     font-family: $font-2;
+//     font-weight: 400;
+//     border-radius: 50%;
+//     z-index: 2;
+// }
+// .btn-1:hover{
+//     cursor: pointer;
+// }
 .container{
     max-width:1200px;
 height: 100vh;
@@ -86,7 +89,7 @@ height: 100vh;
     
 }
 .hr{
-    background-color: #333;
+ background-color: #333;
 height: 2px;
 z-index: 53;
 }

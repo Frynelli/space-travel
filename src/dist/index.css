@@ -43,19 +43,6 @@ p {
   font-family: "Barlow Condensed", sans-serif;
   color: #D0D6F9; }
 
-.btn-1 {
-  width: 274px;
-  height: 274px;
-  background-color: #fff;
-  color: #0B0D17;
-  letter-spacing: 2px;
-  line-height: 37px;
-  font-size: 32px;
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  border-radius: 50%;
-  z-index: 2; }
-
 .container {
   max-width: 1200px;
   height: 100vh; }
@@ -145,49 +132,152 @@ h5 span.number-page {
   right: 0;
   border-bottom: 3px solid #ffff; }
 
-.bck-img {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/earth-background-main.png");
-  background-repeat: no-repeat;
-  mix-blend-mode: lighten;
-  background-size: cover; }
+.menu ul li .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid #ffff; }
 
-.container-1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
+@media (max-width: 1850px) {
+  .bck-img {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/earth-background-main.png");
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    background-size: cover; } }
 
-.body-details {
-  display: flex;
-  flex-direction: column;
-  margin-top: 250px;
-  margin-left: 165px;
-  box-sizing: border-box;
-  width: 450px;
-  height: 382px; }
+@media (max-width: 1150px) {
+  .bck-img {
+    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg"); } }
 
-.body-details h1 {
-  margin: 30px;
-  text-transform: uppercase;
-  font-size: 150px;
-  line-height: 172px;
-  color: #FFFFFF; }
+@media (max-width: 610px) {
+  .bck-img {
+    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg"); } }
 
-.body-details h3 {
-  text-transform: uppercase;
-  letter-spacing: 4.7px;
-  font-size: 28px; }
+@media (max-width: 1850px) {
+  .container-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; } }
 
-.body-details p {
-  font-size: 18px;
-  line-height: 32px; }
+@media (max-width: 1150px) {
+  .container-1 {
+    flex-direction: column; } }
 
-.button-main {
-  margin-top: 380px;
-  margin-right: 230px; }
+@media (max-width: 610px) {
+  .container-1 {
+    flex-direction: column; } }
+
+@media (max-width: 1850px) {
+  .body-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-left: 165px;
+    width: 450px;
+    height: 382px; } }
+
+@media (max-width: 1150px) {
+  .body-details {
+    margin-left: 0;
+    margin-top: 200px;
+    text-align: center;
+    width: 440px; } }
+
+@media (max-width: 610px) {
+  .body-details {
+    width: 345px; } }
+
+@media (max-width: 1850px) {
+  .body-details h1 {
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: 150px;
+    line-height: 172px;
+    color: #FFFFFF; } }
+
+@media (max-width: 1150px) {
+  .body-details h1 {
+    text-align: center;
+    line-height: 150px;
+    margin: 5px 0; } }
+
+@media (max-width: 610px) {
+  .body-details h1 {
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center; } }
+
+@media (max-width: 1850px) {
+  .body-details h3 {
+    text-transform: uppercase;
+    letter-spacing: 4.7px;
+    font-size: 28px; } }
+
+@media (max-width: 1150px) {
+  .body-details h3 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 3.375px; } }
+
+@media (max-width: 610px) {
+  .body-details h3 {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px; } }
+
+@media (max-width: 1850px) {
+  .body-details p {
+    font-size: 18px;
+    line-height: 32px; } }
+
+@media (max-width: 1150px) {
+  .body-details p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center; } }
+
+@media (max-width: 610px) {
+  .body-details p {
+    font-size: 15px;
+    line-height: 25px; } }
+
+@media (max-width: 1850px) {
+  .button-main {
+    position: relative;
+    margin-top: 380px;
+    margin-right: 155px; } }
+
+@media (max-width: 1150px) {
+  .button-main {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px; } }
+
+.button-main .btn-1 {
+  width: 274px;
+  height: 274px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 2;
+  color: #0B0D17;
+  letter-spacing: 2px;
+  line-height: 37px;
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  z-index: 3; }
+
+.button-main .btn-1:hover {
+  cursor: pointer; }
 
 .bck-img-dst {
   position: fixed;
@@ -239,8 +329,16 @@ h5 span.number-page {
 .dest-menu ul li .link {
   color: #D0D6F9; }
 
-.dest-menu ul li a.active {
+.dest-menu ul li .active {
   color: #ffff; }
+
+.dest-menu ul li .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid #ffff; }
 
 .dest-menu ul li .link:hover {
   text-decoration: none; }
@@ -251,7 +349,8 @@ h5 span.number-page {
   bottom: 0;
   left: 0;
   right: 0;
-  border-bottom: 3px solid #ffff; }
+  border-bottom: 3px solid #ffff;
+  opacity: 30%; }
 
 .planets {
   margin-top: 50px; }
@@ -384,9 +483,9 @@ h5 span.number-page {
 
 .bottom-menu ul li .dot:hover {
   background-color: #fff;
-  opacity: 100%; }
+  opacity: 50%; }
 
-.bottom-menu ul li .dot:active {
+.bottom-menu ul li a.active .dot {
   background-color: #FFFFFF;
   opacity: 100%; }
 
@@ -436,34 +535,37 @@ h5 span.number-page {
   cursor: pointer;
   list-style-type: none; }
 
-.left-toggle ul li.dot {
+.left-toggle ul li a .dot {
+  text-align: center;
+  padding-top: 20px;
   border: 3px solid #34373d;
   mix-blend-mode: normal;
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
 
-.left-toggle ul li.dot:hover {
+.left-toggle ul li a .dot:hover {
   border: 3px solid #FFFFFF; }
-
-.left-toggle ul li.dot:active {
-  background-color: #FFFFFF; }
 
 .left-toggle ul li a {
   text-decoration: none;
   font-size: 34px;
-  color: #FFFFFF;
-  opacity: 1; }
+  color: #FFFFFF; }
 
-.left-toggle ul li a:active {
+.left-toggle ul li a .act {
+  color: #34373d;
+  background-color: #FFFFFF; }
+
+.left-toggle ul li a.active {
   color: #34373d; }
 
-.left-toggle ul li a div {
-  margin: 20px 30px; }
+.left-toggle ul li a.active .dot {
+  background-color: #FFFFFF; }
 
 .left-inner-box {
   margin-bottom: 110px;
+  margin-left: 96px;
   height: 200px; }
 
 .left-inner-box .fixed {

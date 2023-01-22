@@ -1,50 +1,148 @@
 .bck-img{
-  position: fixed;
-  top:0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/earth-background-main.png");
-  background-repeat: no-repeat;
-  mix-blend-mode: lighten;
-  background-size: cover;
+    @include desktop{
+        position: fixed;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/earth-background-main.png");
+        background-repeat: no-repeat;
+        mix-blend-mode: lighten;
+        background-size: cover;
+    }
+ @include tablet{
+    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg");
+ }
+ @include mobile{
+    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg");
+ }
   
 }
 
 .container-1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    @include tablet{
+        flex-direction: column;
+    }
+    @include mobile{
+        flex-direction: column;
+    }
 }
 .body-details{
-    display:flex;
-    flex-direction: column;
-  margin-top:250px;
-  margin-left:165px;
-    box-sizing: border-box;
-    width:450px;
-    height: 382px;
+    @include desktop{
+        display:flex;
+        flex-direction: column;
+      margin-top:250px;
+      margin-left:165px;
+        
+        width:450px;
+        height: 382px;
+    }
+    @include tablet{
+        margin-left: 0;
+        margin-top:200px;
+        text-align: center;
+        width:440px;
+    }
+    @include mobile{
+        width:345px;
+    }
+   
 }
 
 .body-details h1{
+   @include desktop{ 
     margin: 30px;
     text-transform: uppercase;
     font-size: 150px;
-line-height: 172px;
-color: #FFFFFF;
+    line-height: 172px;
+    color: #FFFFFF;
+}
+@include tablet{
+    text-align: center;
+    line-height: 150px;
+    margin:5px 0;
+}
+@include mobile{
+    font-size: 80px;
+line-height: 100px;
+text-align: center;
+
+}
 }
 
 .body-details h3{
+@include desktop{
 text-transform: uppercase;
 letter-spacing: 4.7px;
 font-size: 28px;
+}
+@include tablet{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 3.375px;
+}
+@include mobile{
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.7px;
+}
 
 }
 .body-details p{
-    font-size: 18px;
-line-height: 32px;
+  @include desktop{ 
+     font-size: 18px;
+     line-height: 32px;
+}
+@include tablet{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+@include mobile{
+    
+    font-size: 15px;
+line-height: 25px;
+
+}
 }
 
 .button-main{
+    @include desktop{
+    position: relative;
     margin-top: 380px;
-    margin-right: 230px;
+    margin-right: 155px;
 }
+@include tablet{
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    
+}
+
+}
+.button-main .btn-1{
+    width: 274px;
+    height: 274px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 2;
+    color: $dark-color;
+    letter-spacing: 2px;
+    line-height: 37px;
+    font-size: 32px;
+    font-family: $font-2;
+    font-weight: 400;
+    z-index: 3;
+}
+.button-main .btn-1:hover{
+    cursor: pointer;
+}
+

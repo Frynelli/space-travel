@@ -33,20 +33,6 @@
    top:30px;
 }
 
-//left-box
-
-// .container-tech .inner-box .left-box{
-//     display: flex;
-//     position: relative;
-//     top: -43px;
-//     left: 77px;
-   
-//     height: 50vh;
-//     flex-direction: column;
-// }
-
-
-
 //left-toggle navigation
 
 .left-box .left-toggle{
@@ -58,39 +44,45 @@
     cursor: pointer;
     list-style-type: none;
 }
-.left-toggle ul li.dot{
-    
+.left-toggle ul li a .dot{
+    text-align: center;
+    padding-top: 20px;
     border: 3px solid #34373d;
     mix-blend-mode: normal;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-bottom: 15px; 
+    margin-bottom: 10px; 
 }
-.left-toggle ul li.dot:hover{
+.left-toggle ul li a .dot:hover{
     border: 3px solid #FFFFFF;
 }
-.left-toggle ul li.dot:active{
-    background-color: #FFFFFF;
 
-}
 .left-toggle ul li a{
     text-decoration: none;
     font-size: 34px;
     color: #FFFFFF;
-    opacity: 1;
+   
 }
-.left-toggle ul li a:active{
+.left-toggle ul li a .act{
+    color: #34373d;
+    background-color: #FFFFFF;
+}
+.left-toggle ul li a.active{
     color: #34373d;
 }
-.left-toggle ul li a div{
-    margin: 20px 30px;
+.left-toggle ul li a.active .dot{
+    
+    background-color: #FFFFFF;
 }
+
 //inner box left side
 .left-inner-box{
     margin-bottom: 110px;
+    margin-left: 96px;
     height: 200px;
 }
+
 
 .left-inner-box .fixed{
 margin-top: 30px;
@@ -99,9 +91,7 @@ font-size: 16px;
 line-height: 19px;
 letter-spacing: 2.7px;
 }
-// .left-inner-box .text-tech{
-//     position: inherit;
-// }
+
 .left-inner-box .text-tech h3{
     color: #FFFFFF;
     margin-bottom: 10px;
@@ -119,3 +109,5 @@ width:440px;
     top:0;
     height: 50vh;
 }
+
+

@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom";
 
 const Home =()=>{
     return(
@@ -13,9 +13,12 @@ const Home =()=>{
             Well sit back and relax because we'll give you 
             a truly out of this world experience</p>
     </div>
+    <NavLink className="button" to="/destination/">
     <div className="button-main">
-        <button className="btn-1">EXPLORE</button>
+    <button className="btn-1">EXPLORE</button>
     </div>
+    </NavLink>
+    
     </div>
         </div>
     )

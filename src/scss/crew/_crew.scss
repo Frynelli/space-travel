@@ -124,9 +124,9 @@ height: 570px;
     
     .bottom-menu ul li .dot:hover{
         background-color: #fff;
-        opacity: 100%;
+        opacity: 50%;
     }
-    .bottom-menu ul li .dot:active{
+    .bottom-menu ul li a.active .dot{
         background-color: #FFFFFF;
         opacity: 100%;
     }

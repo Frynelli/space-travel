@@ -28,8 +28,6 @@
   
 }
 
-
-
 .dest-menu{
   position: relative;
   left: -45px;
@@ -59,10 +57,21 @@
 .dest-menu ul li .link{
     color: $text-color-light;
 }
-.dest-menu ul li a.active{
+//when active link
+.dest-menu ul li .active{
     color:#ffff;
     
 }
+.dest-menu ul li .active::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  border-bottom: 3px solid #ffff;
+
+}
+//when hovering
 .dest-menu ul li .link:hover{
   text-decoration: none;
 }
@@ -73,7 +82,7 @@
   left:0;
   right: 0;
   border-bottom: 3px solid #ffff;
-
+opacity: 30%;
 }
 
 //planets styling

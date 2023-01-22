@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 const NavBar = ()=>{
@@ -9,10 +9,10 @@ const NavBar = ()=>{
             
                 <nav className="menu modal">
                     <ul>
-                        <li><Link className="link" to="/"><strong>00</strong> Home</Link></li>
-                        <li><Link className="link" to="/destination/"><strong>01</strong> Destinations</Link></li>
-                        <li><Link className="link" to="/crew/"><strong>02</strong> Crew</Link></li>
-                        <li><Link className="link" to="/technology/"><strong>03</strong> Technology</Link></li>
+                        <li><NavLink className="link" to="/" exact><strong>00</strong> Home</NavLink></li>
+                        <li><NavLink className="link" to="/destination/"><strong>01</strong> Destinations</NavLink></li>
+                        <li><NavLink className="link" to="/crew/"><strong>02</strong> Crew</NavLink></li>
+                        <li><NavLink className="link" to="/technology/"><strong>03</strong> Technology</NavLink></li>
                     </ul>
                 </nav>
             

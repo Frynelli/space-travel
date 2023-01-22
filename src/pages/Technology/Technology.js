@@ -1,7 +1,7 @@
 import launchVehicle from "../../assets/technology/image-launch-vehicle-portrait.jpg"
 import capsuleImg from "../../assets/technology/image-space-capsule-portrait.jpg"
 import spaceportImg from "../../assets/technology/image-spaceport-portrait.jpg"
-import { Fragment } from "react"
+import { Fragment, useState} from "react"
 import { Route, NavLink } from "react-router-dom"
 import TechDetails from "./TechDetails"
 
@@ -35,6 +35,13 @@ const DATA =[
 ]
 
 const Technology =()=>{
+  const[active,setActive]=useState('active');
+  const isActive=(event)=>{
+    setActive(event);
+    
+  }
+  
+ 
     return (
         <Fragment>
             <Route path="/technology/" exact>
@@ -48,9 +55,9 @@ const Technology =()=>{
                   
                   <div className="left-toggle">
                   <ul>
-           <li className="act dot"><NavLink to={"/technology/01"}><div>1</div></NavLink></li>
-           <li className="dot"><NavLink to={"/technology/02"}><div>2</div></NavLink></li>
-           <li className="dot"><NavLink to={"/technology/03"}><div>3</div></NavLink></li>
+           <li ><NavLink to={"/technology/01"}><div className="act dot">1</div></NavLink></li>
+           <li><NavLink to={"/technology/02"}><div className="dot">2</div></NavLink></li>
+           <li><NavLink to={"/technology/03"}><div className="dot">3</div></NavLink></li>
           </ul> 
 
                   </div>
@@ -81,11 +88,10 @@ const Technology =()=>{
                   
                   <div className="left-toggle">
                   <ul>
-           <li className="act dot"><NavLink to={"/technology/01"}><div>1</div></NavLink></li>
-           <li className="dot"><NavLink to={"/technology/02"}><div>2</div></NavLink></li>
-           <li className="dot"><NavLink to={"/technology/03"}><div>3</div></NavLink></li>
+           <li className="act"><NavLink to={"/technology/01"}><div className="dot">1</div></NavLink></li>
+           <li><NavLink to={"/technology/02"}><div className="dot">2</div></NavLink></li>
+           <li><NavLink to={"/technology/03"}><div className="dot">3</div></NavLink></li>
           </ul> 
-
                   </div>
                   </div>
                 </div>
