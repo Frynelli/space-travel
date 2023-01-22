@@ -121,9 +121,9 @@ line-height: 25px;
     margin-right: 155px;
 }
 @include tablet{
-    margin-top: 0;
+    margin-top:-45px;
     margin-right: 0;
-    margin-bottom: 10px;
+   
     
 }
 
@@ -141,6 +141,10 @@ line-height: 25px;
     font-family: $font-2;
     font-weight: 400;
     z-index: 3;
+    @include mobile{
+        width: 150px;
+    height: 150px;
+    }
 }
 .button-main .btn-1:hover{
     cursor: pointer;

@@ -258,9 +258,8 @@ h5 span.number-page {
 
 @media (max-width: 1150px) {
   .button-main {
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 10px; } }
+    margin-top: -45px;
+    margin-right: 0; } }
 
 .button-main .btn-1 {
   width: 274px;
@@ -275,6 +274,10 @@ h5 span.number-page {
   font-family: "Bellefair", serif;
   font-weight: 400;
   z-index: 3; }
+  @media (max-width: 610px) {
+    .button-main .btn-1 {
+      width: 150px;
+      height: 150px; } }
 
 .button-main .btn-1:hover {
   cursor: pointer; }
