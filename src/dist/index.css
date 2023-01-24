@@ -392,6 +392,11 @@ h5 span.number-page {
     width: 350px;
     height: 350px; } }
 
+@media (max-width: 720px) {
+  .img-container img {
+    width: 250px;
+    height: 250px; } }
+
 .destinations .inner-container {
   margin-top: 120px;
   display: flex;
@@ -400,6 +405,12 @@ h5 span.number-page {
   @media (max-width: 1200px) {
     .destinations .inner-container {
       margin-top: 15%; } }
+
+@media (max-width: 720px) {
+  .destinations .inner-container h5 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px; } }
 
 .destinations .side-box {
   margin-top: 120px;
@@ -447,9 +458,15 @@ h5 span.number-page {
   margin-left: 45px;
   height: 34px;
   align-items: center; }
+  @media (max-width: 720px) {
+    .dest-menu ul li {
+      margin-left: 24px; } }
 
 .dest-menu ul li .link {
   color: #D0D6F9; }
+  @media (max-width: 720px) {
+    .dest-menu ul li .link {
+      font-size: 14px; } }
 
 .dest-menu ul li .active {
   color: #ffff; }
@@ -488,6 +505,11 @@ h5 span.number-page {
     font-size: 80px;
     line-height: 92px; } }
 
+@media (max-width: 720px) {
+  .planets .title h2 {
+    font-size: 56px;
+    line-height: 64px; } }
+
 .planets p {
   font-size: 18px;
   line-height: 32px; }
@@ -495,6 +517,16 @@ h5 span.number-page {
     .planets p {
       font-size: 16px;
       line-height: 28px; } }
+  @media (max-width: 720px) {
+    .planets p {
+      font-size: 15px;
+      line-height: 25px; } }
+
+@media (max-width: 720px) {
+  .planets p.mob-text {
+    position: relative;
+    left: 20%;
+    max-width: 250px; } }
 
 .planets .hr {
   width: 444px;
@@ -512,9 +544,18 @@ h5 span.number-page {
       justify-content: space-evenly;
       position: relative;
       right: 5%; } }
+  @media (max-width: 720px) {
+    .planets .details {
+      right: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; } }
 
 .planets .details .distance {
   margin-right: 20px; }
+  @media (max-width: 720px) {
+    .planets .details .distance {
+      margin: 0; } }
 
 .planets .details .distance h5 {
   color: #ffffff; }
@@ -522,6 +563,9 @@ h5 span.number-page {
 .planets .details .time {
   position: relative;
   left: 50px; }
+  @media (max-width: 720px) {
+    .planets .details .time {
+      left: 0; } }
 
 .planets .details .time h5 {
   color: #ffffff; }
