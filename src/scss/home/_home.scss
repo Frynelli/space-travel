@@ -10,7 +10,7 @@
         background-size: cover;
     }
  @include tablet{
-    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg");
+    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet-new.png");
  }
  @include mobile{
     background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg");
@@ -27,9 +27,13 @@
     }
     
     @include tablet{
-        flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
     }
     @include mobile{
+        justify-content: center;
+        height: 100vh;
         flex-direction: column;
     }
 }
@@ -45,12 +49,14 @@
     }
     @include tablet{
         margin-left: 0;
-        margin-top:200px;
+        margin-top:0px;
+        justify-content: flex-start;
         text-align: center;
         width:440px;
     }
     @include mobile{
         width:345px;
+        justify-content: center;
     }
    
 }
@@ -113,7 +119,7 @@ line-height: 25px;
 
 }
 }
-
+//button
 .button-main{
     @include desktop{
     position: relative;
@@ -121,10 +127,9 @@ line-height: 25px;
     margin-right: 155px;
 }
 @include tablet{
-    margin-top:-45px;
+    margin-top:-35px;
     margin-right: 0;
    
-    
 }
 
 }
@@ -133,7 +138,6 @@ line-height: 25px;
     height: 274px;
     background-color: #fff;
     border-radius: 50%;
-    z-index: 2;
     color: $dark-color;
     letter-spacing: 2px;
     line-height: 37px;
@@ -141,9 +145,14 @@ line-height: 25px;
     font-family: $font-2;
     font-weight: 400;
     z-index: 3;
+   
     @include mobile{
         width: 150px;
-    height: 150px;
+        height: 150px;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 1.25px;
     }
 }
 .button-main .btn-1:hover{

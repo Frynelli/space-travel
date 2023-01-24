@@ -13,13 +13,27 @@
      line-height: 19px;
    letter-spacing: 2.7px;
    z-index: 50;
+   @include tablet{
+    margin-top: 0;
+   }
+   @include mobile{
+    margin-top:0;
+   }
       
  }
  .modal {
-    background-color: rgba(255, 255, 255, 0.04);
+   @include desktop{
+     background-color: rgba(255, 255, 255, 0.04);
     border-radius: 5px;
     
     max-width: 50%;
+  }
+  @include tablet{
+    max-width: 80%;
+  }
+  @include mobile{
+    height: 200vh;
+  }
   }
   
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -29,20 +43,35 @@
       background-color: rgba(255, 255, 255, 0.04);  
     }
   }
+
  .logo{
-  position: relative;
-  left:145px;
+  margin-left: 20px;
  }
+
 .navbar .hr{
-  position: absolute;
+  @include desktop{position: absolute;
   left:280px;
 width: 473px;
-
 }
+@include tablet{
+  display: none;
+}
+@include mobile{
+  display: none;
+}
+}
+
 .menu{
+   @include desktop{ 
     width: 900px;
     margin-left:450px;
+  }
+  @include tablet{
+    margin: 0;
+  }
+  margin: 0;
 }
+
 
 .menu ul{
     display: flex;
@@ -51,6 +80,9 @@ width: 473px;
     align-items: center;
     list-style-type: none;
     text-transform: uppercase;
+    @include mobile{
+      
+    }
 }
 .menu ul li{
   display: flex;
@@ -80,4 +112,34 @@ width: 473px;
   right: 0;
   border-bottom: 3px solid #ffff;
 
+}
+.navbar .navigation{
+  @include mobile{
+    display: none;
+  }
+}
+
+//mobile Navigation
+
+.navbar .mobileNavigation{
+  display: none;
+  @include mobile{
+    display: flex;
+    align-items: center;
+  }
+}
+.navbar .mobileNavigation .humberger{
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+.navbar .mobileNavigation .closeIcon{
+  position: absolute;
+  left:0;
+  cursor: pointer;
+}
+.navbar .mobileNavigation .menu ul{
+  display: flex;
+  flex-direction: column;
+ list-style-type: none;
 }

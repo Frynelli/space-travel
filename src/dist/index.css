@@ -81,11 +81,26 @@ h5 span.number-page {
   line-height: 19px;
   letter-spacing: 2.7px;
   z-index: 50; }
+  @media (max-width: 1200px) {
+    .navbar {
+      margin-top: 0; } }
+  @media (max-width: 720px) {
+    .navbar {
+      margin-top: 0; } }
 
-.modal {
-  background-color: rgba(255, 255, 255, 0.04);
-  border-radius: 5px;
-  max-width: 50%; }
+@media (max-width: 1850px) {
+  .modal {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 5px;
+    max-width: 50%; } }
+
+@media (max-width: 1200px) {
+  .modal {
+    max-width: 80%; } }
+
+@media (max-width: 720px) {
+  .modal {
+    height: 200vh; } }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .modal {
@@ -94,17 +109,31 @@ h5 span.number-page {
     background-color: rgba(255, 255, 255, 0.04); } }
 
 .logo {
-  position: relative;
-  left: 145px; }
+  margin-left: 20px; }
 
-.navbar .hr {
-  position: absolute;
-  left: 280px;
-  width: 473px; }
+@media (max-width: 1850px) {
+  .navbar .hr {
+    position: absolute;
+    left: 280px;
+    width: 473px; } }
+
+@media (max-width: 1200px) {
+  .navbar .hr {
+    display: none; } }
+
+@media (max-width: 720px) {
+  .navbar .hr {
+    display: none; } }
 
 .menu {
-  width: 900px;
-  margin-left: 450px; }
+  margin: 0; }
+  @media (max-width: 1850px) {
+    .menu {
+      width: 900px;
+      margin-left: 450px; } }
+  @media (max-width: 1200px) {
+    .menu {
+      margin: 0; } }
 
 .menu ul {
   display: flex;
@@ -140,6 +169,32 @@ h5 span.number-page {
   right: 0;
   border-bottom: 3px solid #ffff; }
 
+@media (max-width: 720px) {
+  .navbar .navigation {
+    display: none; } }
+
+.navbar .mobileNavigation {
+  display: none; }
+  @media (max-width: 720px) {
+    .navbar .mobileNavigation {
+      display: flex;
+      align-items: center; } }
+
+.navbar .mobileNavigation .humberger {
+  position: absolute;
+  right: 5%;
+  cursor: pointer; }
+
+.navbar .mobileNavigation .closeIcon {
+  position: absolute;
+  left: 0;
+  cursor: pointer; }
+
+.navbar .mobileNavigation .menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none; }
+
 @media (max-width: 1850px) {
   .bck-img {
     position: fixed;
@@ -151,11 +206,11 @@ h5 span.number-page {
     mix-blend-mode: lighten;
     background-size: cover; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .bck-img {
-    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg"); } }
+    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet-new.png"); } }
 
-@media (max-width: 610px) {
+@media (max-width: 720px) {
   .bck-img {
     background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg"); } }
 
@@ -166,12 +221,16 @@ h5 span.number-page {
     align-items: center;
     justify-content: space-between; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .container-1 {
+    justify-content: center;
+    height: 100vh;
     flex-direction: column; } }
 
-@media (max-width: 610px) {
+@media (max-width: 720px) {
   .container-1 {
+    justify-content: center;
+    height: 100vh;
     flex-direction: column; } }
 
 @media (max-width: 1850px) {
@@ -183,16 +242,18 @@ h5 span.number-page {
     width: 450px;
     height: 382px; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .body-details {
     margin-left: 0;
-    margin-top: 200px;
+    margin-top: 0px;
+    justify-content: flex-start;
     text-align: center;
     width: 440px; } }
 
-@media (max-width: 610px) {
+@media (max-width: 720px) {
   .body-details {
-    width: 345px; } }
+    width: 345px;
+    justify-content: center; } }
 
 @media (max-width: 1850px) {
   .body-details h1 {
@@ -202,13 +263,13 @@ h5 span.number-page {
     line-height: 172px;
     color: #FFFFFF; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .body-details h1 {
     text-align: center;
     line-height: 150px;
     margin: 5px 0; } }
 
-@media (max-width: 610px) {
+@media (max-width: 720px) {
   .body-details h1 {
     font-size: 80px;
     line-height: 100px;
@@ -220,14 +281,14 @@ h5 span.number-page {
     letter-spacing: 4.7px;
     font-size: 28px; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .body-details h3 {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 3.375px; } }
 
-@media (max-width: 610px) {
+@media (max-width: 720px) {
   .body-details h3 {
     font-size: 16px;
     line-height: 19px;
@@ -239,13 +300,13 @@ h5 span.number-page {
     font-size: 18px;
     line-height: 32px; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .body-details p {
     font-size: 16px;
     line-height: 28px;
     text-align: center; } }
 
-@media (max-width: 610px) {
+@media (max-width: 720px) {
   .body-details p {
     font-size: 15px;
     line-height: 25px; } }
@@ -256,9 +317,9 @@ h5 span.number-page {
     margin-top: 380px;
     margin-right: 155px; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .button-main {
-    margin-top: -45px;
+    margin-top: -35px;
     margin-right: 0; } }
 
 .button-main .btn-1 {
@@ -266,7 +327,6 @@ h5 span.number-page {
   height: 274px;
   background-color: #fff;
   border-radius: 50%;
-  z-index: 2;
   color: #0B0D17;
   letter-spacing: 2px;
   line-height: 37px;
@@ -274,10 +334,14 @@ h5 span.number-page {
   font-family: "Bellefair", serif;
   font-weight: 400;
   z-index: 3; }
-  @media (max-width: 610px) {
+  @media (max-width: 720px) {
     .button-main .btn-1 {
       width: 150px;
-      height: 150px; } }
+      height: 150px;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 1.25px; } }
 
 .button-main .btn-1:hover {
   cursor: pointer; }
