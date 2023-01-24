@@ -125,15 +125,21 @@ h5 span.number-page {
   .navbar .hr {
     display: none; } }
 
-.menu {
-  margin: 0; }
-  @media (max-width: 1850px) {
-    .menu {
-      width: 900px;
-      margin-left: 450px; } }
-  @media (max-width: 1200px) {
-    .menu {
-      margin: 0; } }
+@media (max-width: 1850px) {
+  .menu {
+    width: 900px;
+    margin-left: 450px; } }
+
+@media (max-width: 1200px) {
+  .menu {
+    margin: 0; } }
+
+@media (max-width: 720px) {
+  .menu {
+    margin: 4px;
+    width: 60%;
+    position: absolute;
+    right: -2px; } }
 
 .menu ul {
   display: flex;
@@ -142,6 +148,14 @@ h5 span.number-page {
   align-items: center;
   list-style-type: none;
   text-transform: uppercase; }
+  @media (max-width: 720px) {
+    .menu ul {
+      height: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      position: relative;
+      top: 20%; } }
 
 .menu ul li {
   display: flex;
@@ -178,22 +192,23 @@ h5 span.number-page {
   @media (max-width: 720px) {
     .navbar .mobileNavigation {
       display: flex;
-      align-items: center; } }
+      flex-direction: column;
+      justify-content: center;
+      height: 180vh;
+      align-items: stretch; } }
 
-.navbar .mobileNavigation .humberger {
+.navbar .humberger {
   position: absolute;
   right: 5%;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 10; }
 
-.navbar .mobileNavigation .closeIcon {
+.navbar .closeIcon {
+  color: #D0D6F9;
   position: absolute;
-  left: 0;
-  cursor: pointer; }
-
-.navbar .mobileNavigation .menu ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none; }
+  right: 5%;
+  cursor: pointer;
+  z-index: 10; }
 
 @media (max-width: 1850px) {
   .bck-img {
@@ -225,13 +240,15 @@ h5 span.number-page {
   .container-1 {
     justify-content: center;
     height: 100vh;
-    flex-direction: column; } }
+    flex-direction: column;
+    margin-top: 10%; } }
 
 @media (max-width: 720px) {
   .container-1 {
     justify-content: center;
     height: 100vh;
-    flex-direction: column; } }
+    flex-direction: column;
+    margin: 0; } }
 
 @media (max-width: 1850px) {
   .body-details {

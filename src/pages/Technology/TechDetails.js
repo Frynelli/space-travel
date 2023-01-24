@@ -1,4 +1,4 @@
-import { Fragment } from "react"
+
 
 const TechDetails = (props)=>{
     return(

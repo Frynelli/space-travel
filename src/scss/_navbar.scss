@@ -69,7 +69,12 @@ width: 473px;
   @include tablet{
     margin: 0;
   }
-  margin: 0;
+ @include mobile{
+  margin: 4px;
+  width: 60%;
+  position: absolute;
+  right: -2px;
+ }
 }
 
 
@@ -82,6 +87,12 @@ width: 473px;
     text-transform: uppercase;
     @include mobile{
       
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: 20%;
     }
 }
 .menu ul li{
@@ -125,21 +136,24 @@ width: 473px;
   display: none;
   @include mobile{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 180vh;
+    align-items: stretch;
   }
 }
-.navbar .mobileNavigation .humberger{
+.navbar .humberger{
   position: absolute;
   right: 5%;
   cursor: pointer;
+  z-index: 10;
 }
-.navbar .mobileNavigation .closeIcon{
-  position: absolute;
-  left:0;
-  cursor: pointer;
+.navbar  .closeIcon{
+  color: $text-color-light;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    z-index: 10;
+   
 }
-.navbar .mobileNavigation .menu ul{
-  display: flex;
-  flex-direction: column;
- list-style-type: none;
-}
+

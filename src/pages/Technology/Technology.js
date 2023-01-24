@@ -1,7 +1,7 @@
 import launchVehicle from "../../assets/technology/image-launch-vehicle-portrait.jpg"
 import capsuleImg from "../../assets/technology/image-space-capsule-portrait.jpg"
 import spaceportImg from "../../assets/technology/image-spaceport-portrait.jpg"
-import { Fragment, useState} from "react"
+import { Fragment} from "react"
 import { Route, NavLink } from "react-router-dom"
 import TechDetails from "./TechDetails"
 
@@ -35,11 +35,7 @@ const DATA =[
 ]
 
 const Technology =()=>{
-  const[active,setActive]=useState('active');
-  const isActive=(event)=>{
-    setActive(event);
-    
-  }
+  
   
  
     return (
