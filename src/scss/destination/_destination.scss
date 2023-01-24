@@ -13,28 +13,65 @@
   margin-top: 60px;
   width: 445px;
   height: 445px;
+  @include tablet{
+    width: min-content;
+    height: min-content;
+    position: relative;
+    left: 3%;
+  }
   
+}
+.img-container img{
+  @include tablet{
+    width:350px;
+    height: 350px;
+  }
 }
 .destinations .inner-container{
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablet{
+    margin-top:15%;
+  }
 }
 .destinations .side-box{
   margin-top: 120px;
   width: 445px;
   height: 472px;
+  @include tablet{
+    margin-top: 5%;
+    width: 445px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 2%;
+
+  }
   
 }
 
 .dest-menu{
   position: relative;
   left: -45px;
+  @include tablet{
+    left: 0;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .dest-details{
   margin-top: 20px;
+  @include tablet{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    left: 5%;
+  }
   
 }
 .dest-menu ul{
@@ -88,21 +125,44 @@ opacity: 30%;
 //planets styling
 .planets{
   margin-top: 50px;
+  @include tablet{
+    margin-top: 2%;
+  }
 }
 .planets .title{
 color: #ffffff;
+
+}
+.planets .title h2{
+  @include tablet{
+    font-size: 80px;
+  line-height: 92px;
+  }
 }
 .planets p{
 font-size: 18px;
 line-height: 32px;
+@include tablet{
+  font-size: 16px;
+line-height: 28px;
+}
 }
 .planets .hr{
   width: 444px;
   margin: 40px 0;
+  @include tablet{
+    margin:19px 0
+  }
 }
 .planets .details{
   display: flex;
   padding: 10px;
+  @include tablet{
+   padding: 0;
+    justify-content: space-evenly;
+    position: relative;
+    right: 5%;
+  }
   
 } 
 .planets .details .distance{
