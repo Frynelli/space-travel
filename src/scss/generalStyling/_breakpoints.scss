@@ -1,11 +1,16 @@
 $breakpoints:(
+    "xsm":320px,
     "mobile":720px,
     "tablet":1200px,
     "desktop":1850px,
    "xl-desktop":1920px
 );
 
-
+@mixin xsm {
+    @media (max-width: map-get($breakpoints, "xsm")) {
+        @content;
+    }
+}
 @mixin mobile {
     @media (max-width: map-get($breakpoints,"mobile")) {
         @content;

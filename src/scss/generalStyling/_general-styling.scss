@@ -53,6 +53,7 @@ h5{
     font-weight: 500;
     font-size: 28px;
     letter-spacing: 4.75px;
+    
 }
 
 p{
@@ -90,6 +91,7 @@ height: 100vh;
         flex-direction: column;
     }
 }
+
 .hr{
  background-color: #333;
 height: 2px;
@@ -98,6 +100,11 @@ z-index: 53;
 .container-page h5{
     margin-bottom: 5px;
     text-transform: uppercase;
+    @include mobile{
+        font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+      }
    }
 h5 span.number-page{
     line-height: 34px;
