@@ -19,17 +19,15 @@ const DATA =[
   },
   {
     id:"02",
-    title:"MISSION SPECIALIST",
-    name:"MARK SHUTTLEWORTH",
-    text:`Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.`,
-    img:capsuleImg,
+    title:"SPACEPORT",
+    text:`A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.`,
+    img:spaceportImg,
   },
   {
     id:"03",
-    title:"PILOT",
-    name:"VICTOR GLOVER",
-    text:`Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. `,
-    img:spaceportImg,
+    title:"SPACE CAPSULE",
+    text:`A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained. `,
+    img:capsuleImg,
   }
   
 ]

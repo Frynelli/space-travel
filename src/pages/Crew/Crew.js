@@ -46,12 +46,11 @@ const Crew =()=>{
     return(
       <Fragment>
       <Route path="/crew/" exact>
-      <div className="container">
-      <div className="container-page crew-page bck-img-crew" >
-      <div className="fixed-container">
-      <div className="inner-container">
+      <div className="container-g bck-img-crew">
+      <div className="container-crew" >
+      <div className="fixed-main crew-main">
       <h5 className="tablet-resp"><span className="number-page"><strong>02</strong></span> Meet Your Crew</h5>
-      
+      <div className="inner-box-crew">
       <div className="left-box">
           <OneCrew
             key={CREW_DATA[0].id}
@@ -72,8 +71,8 @@ const Crew =()=>{
           </div>
       </div>
       </div>
-      <div className="right-box">
-          <div className="img-details">
+      <div className="right-box right-box-crew">
+          <div className="img-details-crew">
                <Images
                  key={CREW_DATA[0].id}
                  id={CREW_DATA[0].id}
@@ -88,11 +87,12 @@ const Crew =()=>{
   </Route>
 
   <Route path={`/crew/:dataId`}>
-      <div className="container">
-      <div className="container-page crew-page bck-img-crew" >
-      <div className="fixed-container">
-      <div className="inner-container">
+      <div className="container-g bck-img-crew">
+      <div className="container-crew" >
+      <div className="fixed-main crew-main">
       <h5 className="tablet-resp"><span className="number-page"><strong>02</strong></span> Meet Your Crew</h5>
+      <div className="inner-box-crew">
+      
       
       <div className="left-box">
       <AllCrew
@@ -110,8 +110,8 @@ const Crew =()=>{
           </div>
       </div>
       </div>
-      <div className="right-box">
-          <div className="img-details">
+      <div className="right-box right-box-crew">
+          <div className="img-details-crew">
                <ImgMaping
                 info={CREW_DATA}
                   />
