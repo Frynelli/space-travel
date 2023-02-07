@@ -1,0 +1,128 @@
+//background image
+.bck-img-tech{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    background-size: cover;
+    @include tablet{
+        background-image: url("/src/assets/technology/background-technology-tablet.jpg");
+    }
+    @include mobile{
+        background-image: url("/src/assets/technology/background-technology-mobile.jpg");
+    }
+}
+
+//container centered
+.container-tech{
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    height: 100vh;
+    align-items: center;
+}
+//left-side-fixed menu container
+.fixed-main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.fixed-main h5{
+    position: absolute;
+    top: 145px;
+    margin-left: -10px;
+}
+.inner-box{
+    position: fixed;
+}
+.inner-box .left-box{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+//left-inner-box 
+.left-inner-box{
+    width: 580px;
+}
+.left-inner-box .text-tech{
+    max-width: 470px;
+    
+    margin: auto;
+}
+.left-inner-box .text-tech .main-title{
+ @include desktop{
+ font-family: $font-1;
+ font-size: 16px;
+ line-height: 19px;
+ letter-spacing: 2.7px;
+ text-align: initial;
+ }
+}
+.left-inner-box .text-tech .main-text{
+    @include desktop{
+        font-family: $font-1;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: initial;
+        max-width: 444px;
+    }
+}
+
+.left-inner-box .text-tech h3{
+    @include desktop{
+        color: #FFFFFF;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: initial;
+        margin-top: 11px;
+        margin-bottom: 17px;
+    }
+}
+// toggles
+.left-toggle ul li {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.left-toggle ul li a .dot{
+    @include desktop{
+     text-align: center;
+     padding-top: 20px;
+     border: 3px solid #34373d;
+     mix-blend-mode: normal;
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     margin-bottom: 10px; 
+    }
+}
+
+
+         //hover
+.left-toggle ul li a .dot:hover{
+            border: 3px solid #FFFFFF;
+        }
+
+        .left-toggle ul li a{
+            text-decoration: none;
+            font-size: 34px;
+            color: #FFFFFF;
+        }
+
+
+        .left-toggle ul li a .act{
+            color: #34373d;
+            background-color: #FFFFFF;
+        }
+        .left-toggle ul li a.active{
+            color: #34373d;
+        }
+        .left-toggle ul li a.active .dot{
+            
+            background-color: #FFFFFF;
+        }

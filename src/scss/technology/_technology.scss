@@ -5,6 +5,7 @@
         flex-direction: column-reverse;
     }
 }
+
 .bck-img-tech{
     position: fixed;
     top:0;
@@ -23,21 +24,25 @@
 }
 
 .container-tech .inner-box{
-    display: flex;
+   @include desktop{
+     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    // height: 80vh;
     width: 60vw;
     justify-content: space-around;
+     }
     @include mobile{
         width: 100vw;
     }
 }
 
 .container-tech .inner-box h5{
-   text-transform: uppercase;
+   @include desktop{
+    text-transform: uppercase;
    position: relative;
    top:30px;
+   }
    @include mobile{
     font-size: 16px;
 line-height: 19px;
@@ -48,6 +53,7 @@ top: -20%;
 }
 //left-box general container mobile/tablet
 .left-box{
+    display: block;
     @include mobile{
         display: flex;
     flex-direction: column-reverse;
@@ -57,15 +63,20 @@ top: -20%;
 //left-toggle navigation
 
 .left-box .left-toggle{
+    @include desktop{
     position: absolute;
     left: 50px;
    bottom:170px;
+    }
    @include mobile{
     position: static;
     margin-left: -4px;
    }
 }
 .left-toggle ul{
+    @include desktop{
+        display: block;
+    }
     @include mobile{
         display: flex;
         justify-content: center;
@@ -74,6 +85,7 @@ top: -20%;
 .left-toggle ul li {
     cursor: pointer;
     list-style-type: none;
+    display: block;
     @include mobile{
     display: flex;
     width: 67px;
@@ -81,6 +93,7 @@ top: -20%;
     }
 }
 .left-toggle ul li a .dot{
+   @include desktop{
     text-align: center;
     padding-top: 20px;
     border: 3px solid #34373d;
@@ -89,6 +102,7 @@ top: -20%;
     height: 80px;
     border-radius: 50%;
     margin-bottom: 10px; 
+   }
     @include mobile{
         width:40px;
         height: 40px;
@@ -105,9 +119,9 @@ top: -20%;
     color: #FFFFFF;
     @include mobile{
         font-size: 16px;
-line-height: 18px;
-text-align: center;
-letter-spacing: 1px;
+     line-height: 18px;
+     text-align: center;
+     letter-spacing: 1px;
     }
    
 }
@@ -125,49 +139,52 @@ letter-spacing: 1px;
 
 //inner box left side
 .left-inner-box{
-    margin-bottom: 110px;
+    @include desktop{
+        margin-bottom: 110px;
     margin-left: 96px;
     height: 200px;
-    @include mobile{
-       
-        margin: 0;
     }
+    
 }
 
 
 .left-inner-box .fixed{
-margin-top: 30px;
-margin-bottom: 5px;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: 2.7px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
 
 }
 .left-inner-box .fixed p{
-    font-size: 14px;
+    @include desktop{
+        font-size: 14px;
     line-height: 17px;
     text-align: center;
     letter-spacing: 2.3625px;
-   @include mobile{
-    margin-bottom: 8px;
-   }
+     }
+  
 }
 .left-inner-box .text-tech{
     text-align: center;
-  max-width: 327px;
+  
 }
 .left-inner-box .text-tech h3{
     color: #FFFFFF;
     margin-bottom: 10px;
+    padding: 0;
     @include mobile{
-        font-size: 24px;
-line-height: 28px;
+        width:40px;
+        height: 40px;
+        padding-top: 10px;
     }
 }
 .left-inner-box .text-tech p{
-font-size: 18px;
+@include desktop{
+    font-size: 18px;
 line-height: 32px;
 width:440px;
+}
 @include mobile{
     font-size: 15px;
 line-height: 25px;
@@ -182,6 +199,7 @@ width: auto;
     position: relative;
     top:0;
     height: 50vh;
+    display: block;
    }
     
     @include mobile{

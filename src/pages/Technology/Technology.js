@@ -41,11 +41,12 @@ const Technology =()=>{
     return (
         <Fragment>
             <Route path="/technology/" exact>
-              <div className="container">
-                <div className="container-tech bck-img-tech">
+              <div className="container-g bck-img-tech">
+                <div className="container-tech ">
                   <div className="fixed-main">
+                  <h5 className="tablet-resp"><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
                     <div className="inner-box">
-                    <h5 className="tablet-resp"><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
+                    
                   <div className="left-box">
                    <TechDetails title={DATA[0].title} text={DATA[0].text}/>
                   
@@ -74,11 +75,12 @@ const Technology =()=>{
               </div>
             </Route>
             <Route path={`/technology/:dataId`}>
-            <div className="container">
-                <div className="container-tech bck-img-tech">
+            <div className="container-g bck-img-tech">
+                <div className="container-tech ">
                   <div className="fixed-main">
+                  <h5 className="tablet-resp"><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
                     <div className="inner-box">
-                    <h5 className="tablet-resp"><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
+                    
                   <div className="left-box">
                    <DetailsAll info={DATA}/>
                   
