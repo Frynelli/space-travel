@@ -45,7 +45,7 @@ const Technology =()=>{
                 <div className="container-tech bck-img-tech">
                   <div className="fixed-main">
                     <div className="inner-box">
-                    <h5><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
+                    <h5 className="tablet-resp"><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
                   <div className="left-box">
                    <TechDetails title={DATA[0].title} text={DATA[0].text}/>
                   
@@ -78,7 +78,7 @@ const Technology =()=>{
                 <div className="container-tech bck-img-tech">
                   <div className="fixed-main">
                     <div className="inner-box">
-                    <h5><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
+                    <h5 className="tablet-resp"><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
                   <div className="left-box">
                    <DetailsAll info={DATA}/>
                   

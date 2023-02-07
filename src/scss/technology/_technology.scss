@@ -33,16 +33,7 @@
         width: 100vw;
     }
 }
-.container-tech .inner-box .inner-left-container{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 50vh;
-    @include mobile{
-    
-         width: 100vw;
-    }
-}
+
 .container-tech .inner-box h5{
    text-transform: uppercase;
    position: relative;
@@ -55,6 +46,13 @@ top: -20%;
 
    }
 }
+//left-box general container mobile/tablet
+.left-box{
+    @include mobile{
+        display: flex;
+    flex-direction: column-reverse;
+    }
+}
 
 //left-toggle navigation
 
@@ -63,21 +61,23 @@ top: -20%;
     left: 50px;
    bottom:170px;
    @include mobile{
-    position: relative;
-    right: 0;
-    bottom: 300px;
+    position: static;
+    margin-left: -4px;
    }
 }
 .left-toggle ul{
     @include mobile{
         display: flex;
+        justify-content: center;
     }
 }
 .left-toggle ul li {
     cursor: pointer;
     list-style-type: none;
     @include mobile{
-        margin-left: 20px;
+    display: flex;
+    width: 67px;
+    justify-content: space-evenly;
     }
 }
 .left-toggle ul li a .dot{
@@ -129,7 +129,7 @@ letter-spacing: 1px;
     margin-left: 96px;
     height: 200px;
     @include mobile{
-        height: auto;
+       
         margin: 0;
     }
 }
@@ -148,6 +148,9 @@ letter-spacing: 2.7px;
     line-height: 17px;
     text-align: center;
     letter-spacing: 2.3625px;
+   @include mobile{
+    margin-bottom: 8px;
+   }
 }
 .left-inner-box .text-tech{
     text-align: center;
@@ -175,18 +178,23 @@ width: auto;
 //right-box
 
 .container-tech .right-box{
+   @include desktop{
     position: relative;
     top:0;
     height: 50vh;
+   }
+    
     @include mobile{
-        top: 195px;
-        height: 170px;
+        height: 237px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 .container-tech .right-box .img-details > div > img{
    @include mobile{ 
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    width: 100vw;
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+   
 }
 }
 

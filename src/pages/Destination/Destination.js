@@ -60,7 +60,7 @@ const Destination = ()=>{
     <div className="container">
             <div className="container-page destinations bck-img-dst" >
             <div className="inner-container">
-            <h5><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
+            <h5 className="tablet-resp"><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
             <div className="img-container">
             <Images 
             key={DUMMY_DATA[0].id}
@@ -94,7 +94,7 @@ const Destination = ()=>{
     <div className="container">
             <div className="container-page destinations bck-img-dst" >
             <div className="inner-container">
-            <h5><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
+            <h5 className="tablet-resp"><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
             <div className="img-container">
                <ImgMaping info={DUMMY_DATA}/>
                </div>

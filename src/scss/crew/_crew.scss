@@ -17,70 +17,90 @@
     }
   }
 
-  .crew-page{
-    @include mobile{
-      display: flex;
-      flex-direction: column-reverse;
+  // .crew-page{
+  //   @include mobile{
+  //     display: flex;
+  //     flex-direction: column-reverse;
       
-    }
-  }
+  //   }
+  // }
 .crew-page .fixed-container{
+  @include desktop{
     position: absolute;
-    margin-right: 358px;
-    @include mobile{
-      position: relative;
-      margin: 0;
-    }
+    width: 100vw;
+    display: flex;
+    margin-left: 80px;
+  }
+   @include tablet{
+    position: static;
+    margin-top: 230px;
+    height: 100vh;
+    margin-left: 0;
+    margin-bottom: -80px;
+   }
+   
 }
 
+
 .crew-page .inner-container{
+  @include desktop{
     margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include mobile{
-      margin-top:-30px;
-
+  }
+    @include tablet{
+      margin: 0;
     }
+   
+    
   }
 
   .crew-page .inner-container h5{
-    position: relative;
-    left: -95px;
-    @include mobile{
-      position: absolute;
-      bottom: 136%;
-      left: 265px;
+    @include desktop{
+      position: relative;
+      left: -95px;
     }
+    @include tablet{
+      left:35px;
+    }
+    
+   
   }
   
 // left-box-details
 .crew-page .inner-container .left-box{
+   @include desktop{
     margin-top: 60px;
     position: relative;
     top: -43px;
     left:230px;
     width: 700px;
     height: 445px;
-    @include mobile{
-      top: 120px;
-      left: 216px;
+  }
+    @include tablet{
+      margin: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
     }
+   
     
 }
   
   .one-crew {
-    position: relative;
+    @include desktop{
+      position: relative;
     top: 50px;
     right: 108px;
-    @include mobile{
-      top: 13px;
-      right: 0;
-      max-width: 280px;
-      text-align: center;
+  }
+    @include tablet{
+      right:0;
     }
+   
 }
   .one-crew h4{
+   @include desktop{ 
     margin: 25px 0;
     font-style: normal;
     font-weight: 400;
@@ -90,12 +110,14 @@
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
-    @include mobile{
-      font-size: 16px;
-      line-height: 18px;
+  }
+    @include tablet{
+      text-align: center;
     }
+   
   }
   .one-crew h2{
+   @include desktop{
     margin: 25px 0;
     font-size: 56px;
     font-family: $font-2;
@@ -103,77 +125,99 @@
     letter-spacing: 4.725px;
     text-transform: uppercase;
     color: #ffff;
-    @include mobile{
-      font-size: 24px;
-      line-height: 28px;
+   }
+    @include tablet{
+      text-align: center;
     }
+    
   }
   .one-crew p{
-    width:450px;
-    height: 128px;
-    margin: 25px 0;
-    font-family: $font-1;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 32px;
-@include mobile{
-  font-size: 15px;
-line-height: 25px;
-max-width: 290px;
+    @include desktop{
+      width:450px;
+      height: 128px;
+      margin: 25px 0;
+      font-family: $font-1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+    }
+    
+@include tablet{
+  width: 440px;
+  position: relative;
+  left: 54px;
 }
+
   }
 
   //right-box-image
   .crew-page .right-box{
-   
+   @include desktop{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
     position: relative;
-    top: 120px;
-    bottom: 0;
-    left: 415px;
-    @include mobile{
-      
-    left: 0px;
+    right: 93px;
+   }
+    @include tablet{
+      height: 100vh;
+     
+      justify-content: center;
+      right: 0;
     }
+  
   }
-  .crew-page .right-box .img-details{
-    width: 327px;
-    height: 223px;
-  }
+  // .crew-page .right-box .img-details{
+  //   width: 327px;
+  //   height: 223px;
+  // }
   .crew-page .right-box .img-details > div{
     display: flex;
     justify-content: center;
   }
   .crew-page .right-box .img-details img{
-    @include mobile{
-      
-      height: 222px;
+    @include desktop{
+
+      height:500px;
     }
+   @include tablet{
+    height: 400px;
+   }
   }
-  .crew-page .right-box .img-details .crew-images{
+//   .crew-page .right-box .img-details .crew-images{
  
-height: 570px;
-  }
+// height: 570px;
+//   }
 
   //bottom navigation dots
   
   .bottom-menu{
-    width: 100%;
+    @include desktop{
+      width: 100%;
     position: relative;
     left: 110px;
     bottom: 109px;
-    @include mobile{
-      width: auto;
-    left: -7px;
-    bottom: 335px;
     }
+    @include tablet{
+      left:0;
+    }
+    
     
   }
   .bottom-menu ul{
+    @include desktop{
+      display: flex;
+    }
     
-    display: flex;
+    @include tablet{
+      justify-content: center;
+    }
+    
 
   }
+
   .bottom-menu ul li .dot{
     background-color: #ffff;
     mix-blend-mode: normal;
@@ -187,22 +231,22 @@ height: 570px;
       height: 10px;
     }
   }
-  .bottom-menu ul li{
+  .fixed-container .inner-container .bottom-menu ul li{
          cursor: pointer;
         
         list-style-type: none;
-        
+        z-index: 20;
     }
     
-    .bottom-menu ul li .dot:hover{
-        background-color: #fff;
+    .fixed-container .inner-container .bottom-menu ul li .dot:hover{
+        background-color: #FFFFFF;
         opacity: 50%;
     }
-    .bottom-menu ul li a.active .dot{
+    .fixed-container .inner-container .bottom-menu ul li a.active .dot{
         background-color: #FFFFFF;
         opacity: 100%;
     }
-    .bottom-menu ul li.act .dot{
+    .fixed-container .inner-container .bottom-menu ul li.act .dot{
         background-color:#FFFFFF;
         opacity: 100%;
     }

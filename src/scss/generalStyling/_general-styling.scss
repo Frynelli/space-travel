@@ -113,3 +113,14 @@ h5 span.number-page{
     mix-blend-mode: normal;
     opacity: 0.25;
 }
+.container .tablet-resp{
+    @include tablet{
+       width: 100vw;
+       position: relative;
+       left:45px;
+    }
+    @include mobile{
+        width:fit-content;
+        position: static;
+    }
+}

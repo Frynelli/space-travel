@@ -50,7 +50,7 @@ const Crew =()=>{
       <div className="container-page crew-page bck-img-crew" >
       <div className="fixed-container">
       <div className="inner-container">
-      <h5><span className="number-page"><strong>02</strong></span> Meet Your Crew</h5>
+      <h5 className="tablet-resp"><span className="number-page"><strong>02</strong></span> Meet Your Crew</h5>
       
       <div className="left-box">
           <OneCrew
@@ -92,7 +92,7 @@ const Crew =()=>{
       <div className="container-page crew-page bck-img-crew" >
       <div className="fixed-container">
       <div className="inner-container">
-      <h5><span className="number-page"><strong>02</strong></span> Meet Your Crew</h5>
+      <h5 className="tablet-resp"><span className="number-page"><strong>02</strong></span> Meet Your Crew</h5>
       
       <div className="left-box">
       <AllCrew
@@ -102,7 +102,7 @@ const Crew =()=>{
          
          <div className="bottom-menu">
               <ul>
-                  <li><NavLink  to={"/crew/01"}><div className="dot"></div></NavLink></li>
+                  <li><NavLink to={"/crew/01"}><div className="dot"></div></NavLink></li>
                   <li><NavLink to={"/crew/02"}><div className="dot"></div></NavLink></li>
                   <li><NavLink to={"/crew/03"}><div className="dot"></div></NavLink></li>
                   <li><NavLink to={"/crew/04"}><div className="dot"></div></NavLink></li>
