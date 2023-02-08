@@ -57,20 +57,22 @@ const Destination = ()=>{
     return(
 <Fragment>
     <Route path="/destination/" exact >
-    <div className="container">
-            <div className="container-page destinations bck-img-dst" >
-            <div className="inner-container">
+<div className="container-g bck-img-dst">
+    <div className="container-destination" >
+        <div className="fixed-main">
             <h5 className="tablet-resp"><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
+            <div className="inner-box-destination">
             <div className="img-container">
-            <Images 
-            key={DUMMY_DATA[0].id}
-            id={DUMMY_DATA[0].id}
-            img={DUMMY_DATA[0].img} />
+             <Images 
+                key={DUMMY_DATA[0].id}
+                id={DUMMY_DATA[0].id}
+                 img={DUMMY_DATA[0].img} />
                </div>
-            </div>
-            <div className="side-box">
-            <div className="dest-menu">
-          <ul>
+               </div>
+        </div>
+            <div className="right-box-destination">
+              <div className="dest-menu">
+                    <ul>
                         <li><NavLink className="link active" to="/destination/01">Moon</NavLink></li>
                         <li><NavLink className="link" to="/destination/02">Mars</NavLink></li>
                         <li><NavLink className="link" to="/destination/03">Europa</NavLink></li>
@@ -85,21 +87,23 @@ const Destination = ()=>{
                 distance={DUMMY_DATA[0].distance}
                 time={DUMMY_DATA[0].time} />
                     </div>
-            </div>
         </div>
-        </div>
+    </div>
+</div>
     </Route>
     <Route path={`/destination/:dataId`}>
         
-    <div className="container">
-            <div className="container-page destinations bck-img-dst" >
-            <div className="inner-container">
+     <div className="container-g bck-img-dst">
+       <div className="container-destination" >
+         <div className="fixed-main">
             <h5 className="tablet-resp"><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
-            <div className="img-container">
-               <ImgMaping info={DUMMY_DATA}/>
+              <div className="inner-box-destination">
+                  <div className="img-container">
+                     <ImgMaping info={DUMMY_DATA}/>
+                    </div>
                </div>
             </div>
-            <div className="side-box">
+            <div className="right-box-destination">
             <div className="dest-menu">
           <ul>
                         <li><NavLink className="link" to={`/destination/01`}>Moon</NavLink></li>

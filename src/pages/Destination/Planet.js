@@ -10,7 +10,7 @@ const Planet =(props)=>{
       
         <div className="planets">
           <div  className="title"><h2>{props.title}</h2></div>
-          <p className="mob-text">{props.text}</p>
+          <p className="text">{props.text}</p>
           <div className="hr"></div>
           <div className="details">
             <div className="distance">

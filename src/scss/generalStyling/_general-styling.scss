@@ -88,6 +88,7 @@ height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    height: 100%;
     @include tablet{
         flex-direction: column;
     }
@@ -114,17 +115,17 @@ h5 span.number-page{
     mix-blend-mode: normal;
     opacity: 0.25;
 }
-.container .tablet-resp{
-    @include tablet{
-       width: 100vw;
-       position: relative;
-       left:45px;
-    }
-    @include mobile{
-        width:fit-content;
-        position: static;
-    }
-}
+// .container .tablet-resp{
+//     @include tablet{
+//        width: 100vw;
+//        position: relative;
+//        left:45px;
+//     }
+//     @include mobile{
+//         width:fit-content;
+//         position: static;
+//     }
+// }
 
 //new containers
 

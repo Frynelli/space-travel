@@ -1,0 +1,129 @@
+.container-destination{
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+//planet-image-container
+.inner-box-destination{
+    position:fixed;
+    width: 50%;
+}
+
+//right-side
+.right-box-destination{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: -40px;
+}
+//destination menu
+.dest-menu ul{
+    height: 34px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    justify-content: flex-start;
+}
+.dest-menu ul li{
+    height: 34px;
+    display: flex;
+    position: relative;
+  align-items: center;
+  margin-right: 36px;
+  font-size: 16px;
+line-height: 19px;
+letter-spacing: 2.7px;
+
+}
+.dest-menu ul li .link{
+    color: $text-color-light;
+}
+//when active link
+.dest-menu ul li .active{
+    color:#ffff;
+    
+}
+.dest-menu ul li .active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    border-bottom: 3px solid #ffff;
+    opacity: 100%;
+  }
+  //when hovering
+  .dest-menu ul li .link:hover{
+    text-decoration: none;
+  }
+  .dest-menu ul li .link:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left:0;
+    right: 0;
+    border-bottom: 3px solid #ffff;
+    opacity: 30%;
+  }
+//destination- details
+.dest-details{
+    text-align: initial;
+    margin-top: 30px;
+}
+.dest-details .planets{
+    height:468px;
+}
+.dest-details .planets .title{
+    font-size: 100px;
+line-height: 115px;
+color:#ffffff;
+}
+.dest-details .planets .text{
+    margin-top:16px;
+    margin-bottom: 51px;
+    font-family: $font-1;
+    font-size: 18px;
+    line-height: 32px;
+    height: 125px;
+
+}
+
+.dest-details .planets .details{
+    margin-top: 28px;
+    display: flex;
+    width: 100%;
+}
+
+.dest-details .planets .details .time{
+    position: relative;
+    left: 40px;
+}
+
+.dest-details .planets .details h5{
+    margin-top: 18px;
+    font-size: 28px;
+    line-height: 32px;
+    font-family: $font-2;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.dest-details .planets .details p{
+    font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 2.3625px;
+text-transform: uppercase;
+}
