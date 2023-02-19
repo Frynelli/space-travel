@@ -125,7 +125,7 @@
 // toggles
 .left-toggle{
     @include tablet{
-        margin-bottom: 44px;
+        margin-bottom: 20px;
     }
 }
 .left-toggle ul{
@@ -146,7 +146,7 @@
 }
 
 .left-toggle ul li a .dot{
-    @include desktop{
+    @include xl-desktop{
      text-align: center;
      padding-top: 20px;
      border: 3px solid #34373d;
@@ -155,6 +155,11 @@
      height: 80px;
      border-radius: 50%;
      margin-bottom: 10px; 
+    }
+    @include tablet{
+        height: 60px;
+        width: 60px;
+        padding-top: 14px;
     }
 }
 
@@ -165,9 +170,14 @@
         }
 
         .left-toggle ul li a{
-            text-decoration: none;
+           @include xl-desktop{
+             text-decoration: none;
             font-size: 34px;
             color: #FFFFFF;
+        }
+        @include tablet{
+            font-size: 24px;
+        }
         }
 
 
@@ -187,11 +197,13 @@
 .right-box{
     @include tablet{
         width: 100%;
+        padding-top: 25px;
     }
 }
 
 //images visibility
 .img-details-tech .tech-img-sm{
+
 @include tablet{
     width: 102%;
     margin: 0 auto;

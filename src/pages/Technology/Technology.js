@@ -64,7 +64,7 @@ const Technology =()=>{
                 </div>
                 </div>
                 <div className="right-box">
-                  <div className="img-details">
+                  <div className="img-details-tech">
                   <Images
                  key={DATA[0].id}
                  id={DATA[0].id}
