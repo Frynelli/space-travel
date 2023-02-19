@@ -84,6 +84,7 @@ p{
 height: 100vh;
 }
 
+
 .container-page{
     display: flex;
     align-items: center;
@@ -133,4 +134,37 @@ h5 span.number-page{
     max-width: 100vw;
     height: 100vh;
     text-align: center; 
+}
+//images-visibility
+img.visible-lg{
+    @include xl-desktop{
+        display: block;
+    }
+    @include desktop{
+      display: block;
+    }
+    @include tablet{
+       display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+
+img.visible-sm{
+    @include xl-desktop{
+        display: none;
+    }
+    @include desktop{
+        display: none;
+    }
+    @include tablet{
+        display: block;
+       
+
+    }
+    @include mobile{
+        display: block;
+        
+    }
 }

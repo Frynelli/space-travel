@@ -23,19 +23,41 @@
     margin: 50px auto;
     height: 100vh;
     align-items: center;
+    @include tablet{
+    flex-direction: column-reverse;
+
+    }
 }
 //left-side-fixed menu container
 .fixed-main{
-    display: flex;
+    @include xl-desktop{
+        display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
 }
+@include tablet{
+    justify-content: center;
+    height: 50%;
+}
+}
 .fixed-main h5{
+   @include xl-desktop{ 
+    
     position: absolute;
     top: 145px;
     margin-left: -10px;
-    text-transform: uppercase;
+    text-transform: uppercase;}
+    @include tablet{
+        margin-left: 0;
+        margin-right: 50%;
+    }
+    @include mobile{
+        margin-right: 40%;
+    }
+    @include xsm{
+        margin: 0;
+    }
 }
 .inner-box{
     position: fixed;
@@ -43,6 +65,9 @@
 .inner-box .left-box{
     display: flex;
     flex-direction: row-reverse;
+    @include tablet{
+     flex-direction: column-reverse;
+    }
 }
 
 //left-inner-box 
@@ -55,16 +80,19 @@
     margin: auto;
 }
 .left-inner-box .text-tech .main-title{
- @include desktop{
+ @include xl-desktop{
  font-family: $font-1;
  font-size: 16px;
  line-height: 19px;
  letter-spacing: 2.7px;
  text-align: initial;
  }
+ @include tablet{
+    text-align: center;
+ }
 }
 .left-inner-box .text-tech .main-text{
-    @include desktop{
+    @include xl-desktop{
         font-family: $font-1;
         font-weight: 400;
         font-size: 18px;
@@ -72,10 +100,15 @@
         text-align: initial;
         max-width: 444px;
     }
+    @include tablet{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
 }
 
 .left-inner-box .text-tech h3{
-    @include desktop{
+    @include xl-desktop{
         color: #FFFFFF;
         font-size: 56px;
         line-height: 64px;
@@ -83,11 +116,33 @@
         margin-top: 11px;
         margin-bottom: 17px;
     }
+    @include tablet{
+        font-size: 40px;
+        line-height: 46px;
+         text-align: center;
+    }
 }
 // toggles
+.left-toggle{
+    @include tablet{
+        margin-bottom: 44px;
+    }
+}
+.left-toggle ul{
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        display: flex;
+    justify-content: center;
+    flex-direction: row;
+    }
+}
 .left-toggle ul li {
     cursor: pointer;
     list-style-type: none;
+    @include tablet{
+        margin-right: 16px;
+    }
 }
 
 .left-toggle ul li a .dot{
@@ -127,3 +182,23 @@
             
             background-color: #FFFFFF;
         }
+
+        //right box img
+.right-box{
+    @include tablet{
+        width: 100%;
+    }
+}
+
+//images visibility
+.img-details-tech .tech-img-sm{
+@include tablet{
+    width: 102%;
+    margin: 0 auto;
+    clip-path: polygon(0% 25%, 100% 25%, 100% 100%, 0% 100%);
+}
+@include mobile{
+    width: 102%;
+        clip-path: unset;
+}
+}

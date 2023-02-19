@@ -16,6 +16,7 @@
     }
   }
   .container-crew{
+   @include xl-desktop{ 
     display: flex;
     max-width: 1200px;
     margin: 50px auto;
@@ -23,45 +24,90 @@
     align-items: center;
     justify-content: space-between;
   }
+  @include tablet{
+    flex-direction: column;
+  }
+  }
   .container-crew .crew-main{
-    width:60%;
+    @include xl-desktop{
+      width:60%;
+    }
+    @include tablet{
+      align-items: flex-end;
+      height: 55%;
+    }
   }
   //left-box text
   .left-box .one-crew{
-   text-align: initial;
+   @include xl-desktop{
+    text-align: initial;
+  }
+  @include tablet{
+    text-align: center;
+  }
   }
   .left-box .one-crew h4{
-    font-style: $font-2;
-    font-weight: 400;
-    font-size: 32px;
+    @include xl-desktop{
     line-height: 37px;
     text-transform: uppercase;
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
   }
+  @include tablet{
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 8px;
+  }
+  }
   .left-box .one-crew h2{
     
+   @include xl-desktop{
     font-family: $font-2;
     font-size: 56px;
     line-height: 64px;
     text-transform: uppercase;
   }
+  @include tablet{
+    font-size: 40px;
+    line-height: 46px;
+    padding-bottom: 8px;
+  }
+  }
   .left-box .one-crew p{
-    font-family: $font-1;
+  @include xl-desktop{  
+  font-family: $font-1;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   max-width: 444px;
+}
+@include tablet{
+  font-size: 16px;
+
+}
   }
   //bottom menu
   .bottom-menu{
+    @include xl-desktop{
     position: absolute;
     bottom: 18%;
   }
+  @include tablet{
+    position: relative;
+    bottom: initial;
+    top: 40px;
+    right: 11px;
+  }
+  }
   .bottom-menu ul{
-    display: flex;
+    @include xl-desktop{
+      display: flex;
+    }
+    @include tablet{
+      justify-content: center;
+    }
   }
   .bottom-menu ul li .dot{
     background-color: #ffff;
@@ -92,12 +138,23 @@
 
 //right box - images
 .right-box-crew{
+   @include xl-desktop{ 
     height: 86%;
     width: 50%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+  }
+  @include tablet{
+    align-items: center;
+  }
 }
 .right-box .img-details-crew img{
-    width:90%;
+    @include xl-desktop{
+      width:90%;
+    }
+    @include tablet{
+      width: 80%;
+      margin: 0 auto;
+    }
 }

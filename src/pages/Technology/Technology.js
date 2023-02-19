@@ -1,6 +1,9 @@
 import launchVehicle from "../../assets/technology/image-launch-vehicle-portrait.jpg"
 import capsuleImg from "../../assets/technology/image-space-capsule-portrait.jpg"
 import spaceportImg from "../../assets/technology/image-spaceport-portrait.jpg"
+import launchVehicleTablet from "../../assets/technology/image-launch-vehicle-landscape.jpg"
+import capsuleImgTablet from "../../assets/technology/image-space-capsule-landscape.jpg"
+import spaceportImgTablet from "../../assets/technology/image-spaceport-landscape.jpg"
 import { Fragment} from "react"
 import { Route, NavLink } from "react-router-dom"
 import TechDetails from "./TechDetails"
@@ -10,24 +13,25 @@ import DetailsAll from "./DetailsAll"
 
 
 import ImgMaping from "../../components/ImgMaping"
+
 const DATA =[
   {
       id:"01",
       title:"LAUNCH VEHICLE",
       text:`A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!`,
-      img:launchVehicle,
+      img:{lg:launchVehicle, sm:launchVehicleTablet}
   },
   {
     id:"02",
     title:"SPACEPORT",
     text:`A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.`,
-    img:spaceportImg,
+    img:{lg:spaceportImg,sm:spaceportImgTablet}
   },
   {
     id:"03",
     title:"SPACE CAPSULE",
     text:`A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained. `,
-    img:capsuleImg,
+    img:{lg:capsuleImg,sm:capsuleImgTablet}
   }
   
 ]
@@ -93,7 +97,7 @@ const Technology =()=>{
                 </div>
                 </div>
                 <div className="right-box">
-                  <div className="img-details">
+                  <div className="img-details-tech">
                   <ImgMaping info={DATA}/>
                   </div>
 

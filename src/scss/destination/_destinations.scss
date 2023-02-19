@@ -1,3 +1,19 @@
+.bck-img-dst{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    background-size: cover;
+    @include tablet{
+      background-image: url("/src/assets/destination/background-destination-tablet.jpg");
+    }
+    @include mobile{
+      background-image: url("/src/assets/destination/background-destination-mobile.jpg");
+    }
+  }
 .container-destination{
     display: flex;
     max-width: 1200px;
@@ -12,12 +28,24 @@
 
 //planet-image-container
 .inner-box-destination{
+   @include xl-desktop{
     position:fixed;
     width: 50%;
 }
-
+@include tablet{
+    height: 13%;
+}
+}
+//img-sizes
+.img-container-dest img.dest-img-sm{
+    @include tablet{
+        height: 290px;
+        margin: 0 auto;
+    }
+}
 //right-side
 .right-box-destination{
+   @include xl-desktop{
     height: 100%;
     width: 50%;
     display: flex;
@@ -26,14 +54,24 @@
     position: relative;
     bottom: -40px;
 }
+@include tablet{
+    height: 65%;
+}
+}
 //destination menu
 .dest-menu ul{
+    @include xl-desktop{
     height: 34px;
     display: flex;
     align-items: center;
     list-style-type: none;
     text-transform: uppercase;
     justify-content: flex-start;
+}
+@include tablet{
+    justify-content: center;
+    padding-left: 30px;
+}
 }
 .dest-menu ul li{
     height: 34px;
@@ -78,31 +116,57 @@ letter-spacing: 2.7px;
   }
 //destination- details
 .dest-details{
+   @include xl-desktop{ 
     text-align: initial;
     margin-top: 30px;
+}
+@include tablet{
+    text-align: center;
+}
 }
 .dest-details .planets{
     height:468px;
 }
 .dest-details .planets .title{
+   @include xl-desktop{
     font-size: 100px;
-line-height: 115px;
-color:#ffffff;
+    line-height: 115px;
+    color:#ffffff;
+}
+@include tablet{
+    font-size: 80px;
+    line-height: 92px;
+}
 }
 .dest-details .planets .text{
+   @include xl-desktop{
     margin-top:16px;
     margin-bottom: 51px;
     font-family: $font-1;
     font-size: 18px;
     line-height: 32px;
     height: 125px;
+}
+@include tablet{
+    font-size: 16px;
+    line-height: 28px;
+    height: auto;
+    
+}
 
 }
 
 .dest-details .planets .details{
+    @include xl-desktop{
     margin-top: 28px;
     display: flex;
     width: 100%;
+}
+@include tablet{
+    justify-content: center;
+    position: relative;
+    right: 16px;
+}
 }
 
 .dest-details .planets .details .time{
