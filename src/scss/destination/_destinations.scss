@@ -49,6 +49,7 @@
 }
 @include mobile{
     position: absolute;
+    width: auto;
 }
 @include smt{
     top: 35%;

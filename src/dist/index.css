@@ -905,7 +905,8 @@ h5 span.number-page {
 
 @media (max-width: 720px) {
   .inner-box-destination {
-    position: absolute; } }
+    position: absolute;
+    width: auto; } }
 
 @media (max-height: 770px) {
   .inner-box-destination {
