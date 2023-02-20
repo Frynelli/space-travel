@@ -252,6 +252,6 @@
 }
 @include mobile{
     width: 102%;
-        clip-path: unset;
+    clip-path: polygon(0% 25%, 100% 25%, 100% 90%, 0% 90%);
 }
 }

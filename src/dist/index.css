@@ -647,7 +647,7 @@ h5 span.number-page {
 @media (max-width: 720px) {
   .img-details-tech .tech-img-sm {
     width: 102%;
-    clip-path: unset; } }
+    clip-path: polygon(0% 25%, 100% 25%, 100% 90%, 0% 90%); } }
 
 .bck-img-crew {
   position: fixed;
