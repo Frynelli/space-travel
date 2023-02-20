@@ -46,7 +46,7 @@ const Crew =()=>{
     return(
       <Fragment>
       <Route path="/crew/" exact>
-      <div className="container-g bck-img-crew">
+      <div className="container-g bck-img-crew overflow">
       <div className="container-crew" >
       <div className="fixed-main crew-main">
       <h5 className="tablet-resp"><span className="number-page"><strong>02</strong></span> Meet Your Crew</h5>
@@ -87,7 +87,7 @@ const Crew =()=>{
   </Route>
 
   <Route path={`/crew/:dataId`}>
-      <div className="container-g bck-img-crew">
+      <div className="container-g bck-img-crew overflow">
       <div className="container-crew" >
       <div className="fixed-main crew-main">
       <h5 className="tablet-resp"><span className="number-page"><strong>02</strong></span> Meet Your Crew</h5>

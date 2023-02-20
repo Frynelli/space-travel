@@ -38,7 +38,7 @@
 }
 @include tablet{
     justify-content: center;
-    height: 50%;
+    height: 60%;
 }
 }
 .fixed-main h5{
@@ -61,9 +61,14 @@
     }
 }
 .inner-box{
-    position: fixed;
+    position: absolute;
     @include tablet{
       padding-bottom: 5%;
+      z-index: 60;
+    }
+    @include smt{
+        padding-bottom: 0;
+        padding-top: 22%;
     }
 }
 .inner-box .left-box{
@@ -147,6 +152,7 @@
     }
     @include mobile{
         margin-top: -50px;
+        
     }
 }
 .left-toggle ul{
@@ -233,6 +239,9 @@
         width: 720px;
         
     }
+    @include smt{
+        padding-top: 75px;
+    }
 }
 
 //images visibility
@@ -241,7 +250,7 @@
 @include tablet{
     width: 102%;
     margin: 0 auto;
-    clip-path: polygon(0% 25%, 100% 25%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 25%, 100% 25%, 100% 90%, 0% 90%);
 }
 @include mobile{
     width: 102%;

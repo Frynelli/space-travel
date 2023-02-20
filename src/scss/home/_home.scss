@@ -1,19 +1,21 @@
+
 .bck-img{
     @include desktop{
         position: fixed;
         top:0;
         width: 100%;
         height: 100%;
-        background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/earth-background-main.png");
+        background-image: url("../assets/home/earth-background-main.png");
         background-repeat: no-repeat;
         mix-blend-mode: lighten;
         background-size: cover;
     }
+
  @include tablet{
-    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet-new.png");
+    background-image: url("../assets/home/background-home-tablet-new.png");
  }
  @include mobile{
-    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg");
+    background-image: url("../assets/home/background-home-tablet.jpg");
  }
   
 }

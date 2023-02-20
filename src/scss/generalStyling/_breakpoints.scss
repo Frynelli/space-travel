@@ -3,9 +3,15 @@ $breakpoints:(
     "mobile":720px,
     "tablet":1200px,
     "desktop":1850px,
-   "xl-desktop":1920px
+   "xl-desktop":1920px,
+   "sm-tablet":770px,
 );
 
+@mixin smt {
+    @media (max-height:map-get($breakpoints, "sm-tablet")){
+        @content;
+    }
+}
 @mixin xsm {
     @media (max-width: map-get($breakpoints, "xsm")) {
         @content;

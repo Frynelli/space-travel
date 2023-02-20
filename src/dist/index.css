@@ -265,18 +265,18 @@ h5 span.number-page {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/earth-background-main.png");
+    background-image: url("../assets/home/earth-background-main.png");
     background-repeat: no-repeat;
     mix-blend-mode: lighten;
     background-size: cover; } }
 
 @media (max-width: 1200px) {
   .bck-img {
-    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet-new.png"); } }
+    background-image: url("../assets/home/background-home-tablet-new.png"); } }
 
 @media (max-width: 720px) {
   .bck-img {
-    background-image: url("/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/home/background-home-tablet.jpg"); } }
+    background-image: url("../assets/home/background-home-tablet.jpg"); } }
 
 @media (max-width: 1850px) {
   .container-1 {
@@ -448,7 +448,7 @@ h5 span.number-page {
 @media (max-width: 1200px) {
   .fixed-main {
     justify-content: center;
-    height: 50%; } }
+    height: 60%; } }
 
 @media (max-width: 1920px) {
   .fixed-main h5 {
@@ -472,10 +472,15 @@ h5 span.number-page {
     margin: auto; } }
 
 .inner-box {
-  position: fixed; }
+  position: absolute; }
   @media (max-width: 1200px) {
     .inner-box {
-      padding-bottom: 5%; } }
+      padding-bottom: 5%;
+      z-index: 60; } }
+  @media (max-height: 770px) {
+    .inner-box {
+      padding-bottom: 0;
+      padding-top: 22%; } }
 
 .inner-box .left-box {
   display: flex;
@@ -633,11 +638,15 @@ h5 span.number-page {
   .right-box {
     width: 720px; } }
 
+@media (max-height: 770px) {
+  .right-box {
+    padding-top: 75px; } }
+
 @media (max-width: 1200px) {
   .img-details-tech .tech-img-sm {
     width: 102%;
     margin: 0 auto;
-    clip-path: polygon(0% 25%, 100% 25%, 100% 100%, 0% 100%); } }
+    clip-path: polygon(0% 25%, 100% 25%, 100% 90%, 0% 90%); } }
 
 @media (max-width: 720px) {
   .img-details-tech .tech-img-sm {
@@ -679,12 +688,7 @@ h5 span.number-page {
 
 @media (max-width: 1200px) {
   .container-crew .crew-main {
-    align-items: flex-end;
-    height: 55%; } }
-
-@media (max-width: 720px) {
-  .container-crew .crew-main {
-    height: 75%; } }
+    align-items: flex-end; } }
 
 @media (max-width: 1920px) {
   .inner-box-crew {
@@ -698,6 +702,10 @@ h5 span.number-page {
   .inner-box-crew {
     display: flex;
     flex-direction: column-reverse; } }
+
+@media (max-height: 770px) {
+  .inner-box-crew {
+    margin-top: 150px; } }
 
 @media (max-width: 1920px) {
   .left-box .one-crew {
@@ -863,6 +871,10 @@ h5 span.number-page {
     .bck-img-dst {
       background-image: url("/src/assets/destination/background-destination-mobile.jpg"); } }
 
+@media (max-width: 1200px) {
+  .overflow {
+    overflow: auto; } }
+
 @media (max-width: 720px) {
   .overflow {
     overflow: auto; } }
@@ -883,7 +895,7 @@ h5 span.number-page {
 
 @media (max-width: 1920px) {
   .inner-box-destination {
-    position: fixed;
+    position: absolute;
     width: 50%; } }
 
 @media (max-width: 1200px) {
@@ -893,6 +905,10 @@ h5 span.number-page {
 @media (max-width: 720px) {
   .inner-box-destination {
     position: absolute; } }
+
+@media (max-height: 770px) {
+  .inner-box-destination {
+    top: 35%; } }
 
 @media (max-width: 1200px) {
   .img-container-dest img.dest-img-sm {
@@ -921,6 +937,11 @@ h5 span.number-page {
   .right-box-destination {
     height: 50%;
     bottom: 0px; } }
+
+@media (max-height: 770px) {
+  .right-box-destination {
+    height: auto;
+    top: 102%; } }
 
 @media (max-width: 1920px) {
   .dest-menu ul {

@@ -43,7 +43,7 @@ const Technology =()=>{
     return (
         <Fragment>
             <Route path="/technology/" exact>
-              <div className="container-g bck-img-tech">
+              <div className="container-g bck-img-tech overflow">
                 <div className="container-tech ">
                   <div className="fixed-main">
                   <h5 className="tablet-resp"><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>
@@ -77,7 +77,7 @@ const Technology =()=>{
               </div>
             </Route>
             <Route path={`/technology/:dataId`}>
-            <div className="container-g bck-img-tech">
+            <div className="container-g bck-img-tech overflow">
                 <div className="container-tech ">
                   <div className="fixed-main">
                   <h5 className="tablet-resp"><span className="number-page"><strong>03</strong></span> Space Launch 101</h5>

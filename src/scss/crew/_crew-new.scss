@@ -34,10 +34,10 @@
     }
     @include tablet{
       align-items: flex-end;
-      height: 55%;
+      ;
     }
     @include mobile{
-      height: 75%;
+     
     }
   }
   //inner-box-container
@@ -52,6 +52,9 @@
       display: flex;
       flex-direction: column-reverse;
 
+    }
+    @include smt{
+      margin-top: 150px;
     }
   }
   //left-box text
