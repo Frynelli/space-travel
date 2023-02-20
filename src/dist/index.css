@@ -638,10 +638,6 @@ h5 span.number-page {
   .right-box {
     width: 720px; } }
 
-@media (max-height: 770px) {
-  .right-box {
-    padding-top: 75px; } }
-
 @media (max-width: 1200px) {
   .img-details-tech .tech-img-sm {
     width: 102%;
@@ -689,6 +685,10 @@ h5 span.number-page {
 @media (max-width: 1200px) {
   .container-crew .crew-main {
     align-items: flex-end; } }
+
+@media (max-width: 720px) {
+  .container-crew .crew-main {
+    height: 80%; } }
 
 @media (max-width: 1920px) {
   .inner-box-crew {
