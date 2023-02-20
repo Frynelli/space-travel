@@ -76,7 +76,7 @@ const Destination = ()=>{
                         <li><NavLink className="link active" to="/destination/01">Moon</NavLink></li>
                         <li><NavLink className="link" to="/destination/02">Mars</NavLink></li>
                         <li><NavLink className="link" to="/destination/03">Europa</NavLink></li>
-                        <li><NavLink className="link" to="/destination/04">Titans</NavLink></li>
+                        <li><NavLink className="link" to="/destination/04">Titan</NavLink></li>
                     </ul> 
                 </div>
                 <div className="dest-details">
@@ -109,7 +109,7 @@ const Destination = ()=>{
                         <li><NavLink className="link" to={`/destination/01`}>Moon</NavLink></li>
                         <li><NavLink className="link" to={"/destination/02"}>Mars</NavLink></li>
                         <li><NavLink className="link" to={"/destination/03"}>Europa</NavLink></li>
-                        <li><NavLink className="link" to={"/destination/04"}>Titans</NavLink></li>
+                        <li><NavLink className="link" to={"/destination/04"}>Titan</NavLink></li>
                     </ul> 
                 </div>
                 <div className="dest-details">
