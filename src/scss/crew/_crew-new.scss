@@ -36,6 +36,23 @@
       align-items: flex-end;
       height: 55%;
     }
+    @include mobile{
+      height: 75%;
+    }
+  }
+  //inner-box-container
+  .inner-box-crew{
+    @include xl-desktop{
+      display: block;
+    }
+    @include tablet{
+      display: block;
+    }
+    @include mobile{
+      display: flex;
+      flex-direction: column-reverse;
+
+    }
   }
   //left-box text
   .left-box .one-crew{
@@ -59,6 +76,10 @@
     line-height: 28px;
     padding-bottom: 8px;
   }
+  @include mobile{
+    font-size: 16px;
+line-height: 18px;
+  }
   }
   .left-box .one-crew h2{
     
@@ -72,6 +93,10 @@
     font-size: 40px;
     line-height: 46px;
     padding-bottom: 8px;
+  }
+  @include mobile{
+    font-size: 24px;
+    line-height: 28px;
   }
   }
   .left-box .one-crew p{
@@ -87,6 +112,10 @@
   font-size: 16px;
 
 }
+@include mobile{
+  font-size: 15px;
+  line-height: 25px;
+}
   }
   //bottom menu
   .bottom-menu{
@@ -99,6 +128,9 @@
     bottom: initial;
     top: 40px;
     right: 11px;
+  }
+  @include mobile{
+    top:-20px;
   }
   }
   .bottom-menu ul{
@@ -117,6 +149,10 @@
     height: 12px;
     border-radius: 50%;
     margin-left: 20px;
+    @include mobile{
+      width: 10px;
+
+    }
   }
   .bottom-menu ul li{
     cursor: pointer;
@@ -148,13 +184,22 @@
   @include tablet{
     align-items: center;
   }
+  @include mobile{
+    height: auto;
+    position: absolute;
+    top: 20%;
+  }
 }
 .right-box .img-details-crew img{
     @include xl-desktop{
       width:90%;
     }
     @include tablet{
-      width: 80%;
+      width: auto;
+      height: 440px;
       margin: 0 auto;
+    }
+    @include mobile{
+      height: 250px;
     }
 }

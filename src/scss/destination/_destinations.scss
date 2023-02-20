@@ -14,6 +14,11 @@
       background-image: url("/src/assets/destination/background-destination-mobile.jpg");
     }
   }
+  .overflow{
+    @include mobile{
+        overflow: auto;
+    }
+  }
 .container-destination{
     display: flex;
     max-width: 1200px;
@@ -24,6 +29,10 @@
     @include tablet{
         flex-direction: column;
     }
+    @include mobile{
+        margin: 0 auto;
+    }
+    
 }
 
 //planet-image-container
@@ -35,12 +44,18 @@
 @include tablet{
     height: 13%;
 }
+@include mobile{
+    position: absolute;
+}
 }
 //img-sizes
 .img-container-dest img.dest-img-sm{
     @include tablet{
         height: 290px;
         margin: 0 auto;
+    }
+    @include mobile{
+        height: 230px;
     }
 }
 //right-side
@@ -56,6 +71,10 @@
 }
 @include tablet{
     height: 65%;
+}
+@include mobile{
+    height: 50%;
+    bottom: 0px;
 }
 }
 //destination menu
@@ -127,7 +146,7 @@ letter-spacing: 2.7px;
 .dest-details .planets{
     height:468px;
 }
-.dest-details .planets .title{
+.dest-details .planets .title h2{
    @include xl-desktop{
     font-size: 100px;
     line-height: 115px;
@@ -136,6 +155,10 @@ letter-spacing: 2.7px;
 @include tablet{
     font-size: 80px;
     line-height: 92px;
+}
+@include mobile{
+    font-size: 56px;
+    line-height: 64px;
 }
 }
 .dest-details .planets .text{
@@ -153,6 +176,12 @@ letter-spacing: 2.7px;
     height: auto;
     
 }
+@include mobile{
+    font-size: 15px;
+    line-height: 25px;
+    height: min-content;
+    max-width: 327px;
+}
 
 }
 
@@ -167,11 +196,20 @@ letter-spacing: 2.7px;
     position: relative;
     right: 16px;
 }
+@include mobile{
+    flex-direction: column;
+    right: 0;
+}
 }
 
 .dest-details .planets .details .time{
+   @include xl-desktop{
     position: relative;
     left: 40px;
+}
+@include mobile{
+    position: static;
+}
 }
 
 .dest-details .planets .details h5{
@@ -181,13 +219,16 @@ letter-spacing: 2.7px;
     font-family: $font-2;
     text-transform: uppercase;
     color: #ffffff;
+    @include mobile{
+        margin-bottom: 18px;
+    }
 }
 
 .dest-details .planets .details p{
-    font-size: 14px;
-line-height: 17px;
-/* identical to box height */
-
-letter-spacing: 2.3625px;
-text-transform: uppercase;
+  
+      font-size: 14px;
+      line-height: 17px;
+     letter-spacing: 2.3625px;
+      text-transform: uppercase;
+    
 }

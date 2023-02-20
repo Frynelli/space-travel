@@ -464,14 +464,18 @@ h5 span.number-page {
 
 @media (max-width: 720px) {
   .fixed-main h5 {
-    margin-right: 40%; } }
+    margin: auto;
+    top: 85px; } }
 
 @media (max-width: 320px) {
   .fixed-main h5 {
-    margin: 0; } }
+    margin: auto; } }
 
 .inner-box {
   position: fixed; }
+  @media (max-width: 1200px) {
+    .inner-box {
+      padding-bottom: 5%; } }
 
 .inner-box .left-box {
   display: flex;
@@ -499,6 +503,11 @@ h5 span.number-page {
   .left-inner-box .text-tech .main-title {
     text-align: center; } }
 
+@media (max-width: 720px) {
+  .left-inner-box .text-tech .main-title {
+    font-size: 14px;
+    line-height: 17px; } }
+
 @media (max-width: 1920px) {
   .left-inner-box .text-tech .main-text {
     font-family: "Barlow Condensed", sans-serif;
@@ -513,6 +522,13 @@ h5 span.number-page {
     font-size: 16px;
     line-height: 28px;
     text-align: center; } }
+
+@media (max-width: 720px) {
+  .left-inner-box .text-tech .main-text {
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 327px;
+    margin: 0 auto; } }
 
 @media (max-width: 1920px) {
   .left-inner-box .text-tech h3 {
@@ -529,9 +545,18 @@ h5 span.number-page {
     line-height: 46px;
     text-align: center; } }
 
+@media (max-width: 720px) {
+  .left-inner-box .text-tech h3 {
+    font-size: 24px;
+    line-height: 28px; } }
+
 @media (max-width: 1200px) {
   .left-toggle {
     margin-bottom: 20px; } }
+
+@media (max-width: 720px) {
+  .left-toggle {
+    margin-top: -50px; } }
 
 .left-toggle ul {
   display: flex;
@@ -566,6 +591,12 @@ h5 span.number-page {
     width: 60px;
     padding-top: 14px; } }
 
+@media (max-width: 720px) {
+  .left-toggle ul li a .dot {
+    height: 40px;
+    width: 40px;
+    padding-top: 8px; } }
+
 .left-toggle ul li a .dot:hover {
   border: 3px solid #FFFFFF; }
 
@@ -579,6 +610,10 @@ h5 span.number-page {
   .left-toggle ul li a {
     font-size: 24px; } }
 
+@media (max-width: 720px) {
+  .left-toggle ul li a {
+    font-size: 16px; } }
+
 .left-toggle ul li a .act {
   color: #34373d;
   background-color: #FFFFFF; }
@@ -591,8 +626,12 @@ h5 span.number-page {
 
 @media (max-width: 1200px) {
   .right-box {
-    width: 100%;
+    width: 1200px;
     padding-top: 25px; } }
+
+@media (max-width: 720px) {
+  .right-box {
+    width: 720px; } }
 
 @media (max-width: 1200px) {
   .img-details-tech .tech-img-sm {
@@ -643,6 +682,23 @@ h5 span.number-page {
     align-items: flex-end;
     height: 55%; } }
 
+@media (max-width: 720px) {
+  .container-crew .crew-main {
+    height: 75%; } }
+
+@media (max-width: 1920px) {
+  .inner-box-crew {
+    display: block; } }
+
+@media (max-width: 1200px) {
+  .inner-box-crew {
+    display: block; } }
+
+@media (max-width: 720px) {
+  .inner-box-crew {
+    display: flex;
+    flex-direction: column-reverse; } }
+
 @media (max-width: 1920px) {
   .left-box .one-crew {
     text-align: initial; } }
@@ -665,6 +721,11 @@ h5 span.number-page {
     line-height: 28px;
     padding-bottom: 8px; } }
 
+@media (max-width: 720px) {
+  .left-box .one-crew h4 {
+    font-size: 16px;
+    line-height: 18px; } }
+
 @media (max-width: 1920px) {
   .left-box .one-crew h2 {
     font-family: "Bellefair", serif;
@@ -677,6 +738,11 @@ h5 span.number-page {
     font-size: 40px;
     line-height: 46px;
     padding-bottom: 8px; } }
+
+@media (max-width: 720px) {
+  .left-box .one-crew h2 {
+    font-size: 24px;
+    line-height: 28px; } }
 
 @media (max-width: 1920px) {
   .left-box .one-crew p {
@@ -691,6 +757,11 @@ h5 span.number-page {
   .left-box .one-crew p {
     font-size: 16px; } }
 
+@media (max-width: 720px) {
+  .left-box .one-crew p {
+    font-size: 15px;
+    line-height: 25px; } }
+
 @media (max-width: 1920px) {
   .bottom-menu {
     position: absolute;
@@ -702,6 +773,10 @@ h5 span.number-page {
     bottom: initial;
     top: 40px;
     right: 11px; } }
+
+@media (max-width: 720px) {
+  .bottom-menu {
+    top: -20px; } }
 
 @media (max-width: 1920px) {
   .bottom-menu ul {
@@ -719,6 +794,9 @@ h5 span.number-page {
   height: 12px;
   border-radius: 50%;
   margin-left: 20px; }
+  @media (max-width: 720px) {
+    .bottom-menu ul li .dot {
+      width: 10px; } }
 
 .bottom-menu ul li {
   cursor: pointer;
@@ -749,14 +827,25 @@ h5 span.number-page {
   .right-box-crew {
     align-items: center; } }
 
+@media (max-width: 720px) {
+  .right-box-crew {
+    height: auto;
+    position: absolute;
+    top: 20%; } }
+
 @media (max-width: 1920px) {
   .right-box .img-details-crew img {
     width: 90%; } }
 
 @media (max-width: 1200px) {
   .right-box .img-details-crew img {
-    width: 80%;
+    width: auto;
+    height: 440px;
     margin: 0 auto; } }
+
+@media (max-width: 720px) {
+  .right-box .img-details-crew img {
+    height: 250px; } }
 
 .bck-img-dst {
   position: fixed;
@@ -774,6 +863,10 @@ h5 span.number-page {
     .bck-img-dst {
       background-image: url("/src/assets/destination/background-destination-mobile.jpg"); } }
 
+@media (max-width: 720px) {
+  .overflow {
+    overflow: auto; } }
+
 .container-destination {
   display: flex;
   max-width: 1200px;
@@ -784,6 +877,9 @@ h5 span.number-page {
   @media (max-width: 1200px) {
     .container-destination {
       flex-direction: column; } }
+  @media (max-width: 720px) {
+    .container-destination {
+      margin: 0 auto; } }
 
 @media (max-width: 1920px) {
   .inner-box-destination {
@@ -794,10 +890,18 @@ h5 span.number-page {
   .inner-box-destination {
     height: 13%; } }
 
+@media (max-width: 720px) {
+  .inner-box-destination {
+    position: absolute; } }
+
 @media (max-width: 1200px) {
   .img-container-dest img.dest-img-sm {
     height: 290px;
     margin: 0 auto; } }
+
+@media (max-width: 720px) {
+  .img-container-dest img.dest-img-sm {
+    height: 230px; } }
 
 @media (max-width: 1920px) {
   .right-box-destination {
@@ -812,6 +916,11 @@ h5 span.number-page {
 @media (max-width: 1200px) {
   .right-box-destination {
     height: 65%; } }
+
+@media (max-width: 720px) {
+  .right-box-destination {
+    height: 50%;
+    bottom: 0px; } }
 
 @media (max-width: 1920px) {
   .dest-menu ul {
@@ -877,15 +986,20 @@ h5 span.number-page {
   height: 468px; }
 
 @media (max-width: 1920px) {
-  .dest-details .planets .title {
+  .dest-details .planets .title h2 {
     font-size: 100px;
     line-height: 115px;
     color: #ffffff; } }
 
 @media (max-width: 1200px) {
-  .dest-details .planets .title {
+  .dest-details .planets .title h2 {
     font-size: 80px;
     line-height: 92px; } }
+
+@media (max-width: 720px) {
+  .dest-details .planets .title h2 {
+    font-size: 56px;
+    line-height: 64px; } }
 
 @media (max-width: 1920px) {
   .dest-details .planets .text {
@@ -902,6 +1016,13 @@ h5 span.number-page {
     line-height: 28px;
     height: auto; } }
 
+@media (max-width: 720px) {
+  .dest-details .planets .text {
+    font-size: 15px;
+    line-height: 25px;
+    height: min-content;
+    max-width: 327px; } }
+
 @media (max-width: 1920px) {
   .dest-details .planets .details {
     margin-top: 28px;
@@ -914,9 +1035,19 @@ h5 span.number-page {
     position: relative;
     right: 16px; } }
 
-.dest-details .planets .details .time {
-  position: relative;
-  left: 40px; }
+@media (max-width: 720px) {
+  .dest-details .planets .details {
+    flex-direction: column;
+    right: 0; } }
+
+@media (max-width: 1920px) {
+  .dest-details .planets .details .time {
+    position: relative;
+    left: 40px; } }
+
+@media (max-width: 720px) {
+  .dest-details .planets .details .time {
+    position: static; } }
 
 .dest-details .planets .details h5 {
   margin-top: 18px;
@@ -925,10 +1056,12 @@ h5 span.number-page {
   font-family: "Bellefair", serif;
   text-transform: uppercase;
   color: #ffffff; }
+  @media (max-width: 720px) {
+    .dest-details .planets .details h5 {
+      margin-bottom: 18px; } }
 
 .dest-details .planets .details p {
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   letter-spacing: 2.3625px;
   text-transform: uppercase; }

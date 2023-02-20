@@ -57,7 +57,7 @@ const Destination = ()=>{
     return(
 <Fragment>
     <Route path="/destination/" exact >
-<div className="container-g bck-img-dst">
+<div className="container-g bck-img-dst overflow">
     <div className="container-destination" >
         <div className="fixed-main">
             <h5 className="tablet-resp"><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
@@ -93,7 +93,7 @@ const Destination = ()=>{
     </Route>
     <Route path={`/destination/:dataId`}>
         
-     <div className="container-g bck-img-dst">
+     <div className="container-g bck-img-dst overflow">
        <div className="container-destination" >
          <div className="fixed-main">
             <h5 className="tablet-resp"><span className="number-page"><strong>01</strong></span> PICK YOUR DESTINATION</h5>
