@@ -688,7 +688,8 @@ h5 span.number-page {
 
 @media (max-width: 720px) {
   .container-crew .crew-main {
-    height: 80%; } }
+    height: 80%;
+    width: auto; } }
 
 @media (max-width: 1920px) {
   .inner-box-crew {
