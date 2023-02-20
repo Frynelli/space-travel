@@ -49,7 +49,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Space-travel](https://www.your-site.com)
+- Website - [Space-travel](https://space-travel-frynelli.netlify.app/destination/03)
 - Frontend Mentor - [@Frynelli](https://www.frontendmentor.io/profile/Frynelli)
 
 
