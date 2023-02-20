@@ -67,8 +67,7 @@
       z-index: 60;
     }
     @include smt{
-        padding-bottom: 0;
-        padding-top: 22%;
+        padding: 0;
     }
 }
 .inner-box .left-box{

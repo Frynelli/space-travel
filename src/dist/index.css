@@ -479,8 +479,7 @@ h5 span.number-page {
       z-index: 60; } }
   @media (max-height: 770px) {
     .inner-box {
-      padding-bottom: 0;
-      padding-top: 22%; } }
+      padding: 0; } }
 
 .inner-box .left-box {
   display: flex;
