@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:(https://your-solution-url.com)
+
 
 
 ### Built with
@@ -49,8 +49,8 @@ Users should be able to:
 
 ## Author
 
-- Website - [Space-travel](https://space-travel-frynelli.netlify.app/destination/03)
-- Frontend Mentor - [@Frynelli](https://www.frontendmentor.io/profile/Frynelli)
+- Website - (https://space-travel-frynelli.netlify.app/)
+- Frontend Mentor -(https://www.frontendmentor.io/profile/Frynelli)
 
 
 
