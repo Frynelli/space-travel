@@ -31,12 +31,6 @@ Users should be able to:
 (/Users/frynellioikonomou/Desktop/projects-portfolio/space-travel/src/assets/Screenshot.png)
 
 
-### Links
-
-- Solution URL:(https://your-solution-url.com)
-
-
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -44,7 +38,7 @@ Users should be able to:
 - Sass
 - Flexbox
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+
 
 
 ## Author
